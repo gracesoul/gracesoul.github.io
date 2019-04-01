@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-01T02:12:29.303Z</updated>
+  <updated>2019-04-01T02:16:29.011Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,15 @@
     <link href="http://yoursite.com/2019/04/01/hexo-github%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%88%B0%E7%9A%84%E5%9D%91/"/>
     <id>http://yoursite.com/2019/04/01/hexo-github更换主题踩到的坑/</id>
     <published>2019-04-01T01:37:14.000Z</published>
-    <updated>2019-04-01T02:12:29.303Z</updated>
+    <updated>2019-04-01T02:16:29.011Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: ‘’’hexo+github更换主题踩到的坑’’’<br>date: 2019-04-01 09:37:14</p><h2 id="tags-hexo-github-主题"><a href="#tags-hexo-github-主题" class="headerlink" title="tags: [hexo github 主题]"></a>tags: [hexo github 主题]</h2><p>使用hexo+github 搭建博客 更换主题 踩到的坑<br>1.使用别人的主题 修改theme<br>2.部署发布(hexo clean   —  hexo s)<br>3.登录本地服务器 (localhost:4000)<br>   界面出现:<br>   <img src="EAC484BA23A64AFD9F344C2803AF89A0" alt="image"><br>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
+    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑<br>1.使用别人的主题 修改theme<br>2.部署发布(hexo clean   —  hexo s)<br>3.登录本地服务器 (localhost:4000)<br>   界面出现:<br>   <img src="EAC484BA23A64AFD9F344C2803AF89A0" alt="image"><br>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;p&gt;title: ‘’’hexo+github更换主题踩到的坑’’’&lt;br&gt;date: 2019-04-01 09:37:14&lt;/p&gt;
-&lt;h2 id=&quot;tags-hexo-github-主题&quot;&gt;&lt;a href=&quot;#tags-hexo-github-主题&quot; class=
+        &lt;p&gt;使用hexo+github 搭建博客 更换主题 踩到的坑&lt;br&gt;1.使用别人的主题 修改theme&lt;br&gt;2.部署发布(hexo clean   —  hexo s)&lt;br&gt;3.登录本地服务器 (localhost:4000)&lt;br&gt;   界面出现:&lt;br&gt;   &lt;img 
       
     
     </summary>
