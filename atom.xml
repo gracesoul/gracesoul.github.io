@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-01T08:19:00.446Z</updated>
+  <updated>2019-04-02T06:05:21.921Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/04/01/%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91/"/>
     <id>http://yoursite.com/2019/04/01/更换主题踩得坑/</id>
     <published>2019-04-01T08:17:15.000Z</published>
-    <updated>2019-04-01T08:19:00.446Z</updated>
+    <updated>2019-04-02T06:05:21.921Z</updated>
     
-    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑<br>1.使用别人的主题 修改theme<br>2.部署发布(hexo clean   —  hexo s)<br>3.登录本地服务器 (localhost:4000)<br>   界面出现:<br>   <img src="/2019/04/01/更换主题踩得坑/error.png" alt="image"><br>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
+    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑<br>1.使用别人的主题 修改theme<br>2.部署发布(hexo clean   —  hexo s)<br>3.登录本地服务器 (localhost:4000)<br>   界面出现:<br>   <img src="/2019/04/01/更换主题踩得坑/error.png" alt="更换主题踩得坑"><br>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
     
     <summary type="html">
     
