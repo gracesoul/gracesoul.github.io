@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-28T02:03:00.707Z</updated>
+  <updated>2019-04-02T06:05:21.921Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;更换主题踩得坑&#39;</title>
+    <link href="http://yoursite.com/2019/04/01/%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91/"/>
+    <id>http://yoursite.com/2019/04/01/更换主题踩得坑/</id>
+    <published>2019-04-01T08:17:15.000Z</published>
+    <updated>2019-04-02T06:05:21.921Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑<br>1.使用别人的主题 修改theme<br>2.部署发布(hexo clean   —  hexo s)<br>3.登录本地服务器 (localhost:4000)<br>   界面出现:<br>   <img src="/2019/04/01/更换主题踩得坑/error.png" alt="更换主题踩得坑"><br>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用hexo+github 搭建博客 更换主题 踩到的坑&lt;br&gt;1.使用别人的主题 修改theme&lt;br&gt;2.部署发布(hexo clean   —  hexo s)&lt;br&gt;3.登录本地服务器 (localhost:4000)&lt;br&gt;   界面出现:&lt;br&gt;   &lt;img 
+      
+    
+    </summary>
+    
+    
+      <category term="hexo  github  主题" scheme="http://yoursite.com/tags/hexo-github-%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好,Hexo</title>
+    <link href="http://yoursite.com/2019/03/28/%E4%BD%A0%E5%A5%BD-Hexo/"/>
+    <id>http://yoursite.com/2019/03/28/你好-Hexo/</id>
+    <published>2019-03-28T03:09:18.000Z</published>
+    <updated>2019-03-29T06:50:15.644Z</updated>
+    
+    <content type="html"><![CDATA[<p>初次使用Hexo,是一件非常不多的事!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;初次使用Hexo,是一件非常不多的事!&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="搭建博客" scheme="http://yoursite.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+    
+      <category term="nmp" scheme="http://yoursite.com/tags/nmp/"/>
+    
+      <category term="基础" scheme="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
