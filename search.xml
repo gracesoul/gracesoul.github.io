@@ -17,7 +17,7 @@
   <entry>
     <title><![CDATA[更换主题踩得坑]]></title>
     <url>%2Fblog%2F2019%2F04%2F01%2F%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[使用hexo+github 搭建博客 更换主题 踩到的坑 使用别人的主题 修改theme 部署发布(hexo clean — hexo s) 登录本地服务器 (localhost:4000)界面出现: 解决方案:npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive(安装 Apollo Github 的依赖包) 安装后,hexo clean —&gt;hexo c —&gt;hexo s本地就可以正常运行]]></content>
+    <content type="text"><![CDATA[使用hexo+github 搭建博客 更换主题 踩到的坑 使用别人的主题 修改theme 部署发布(hexo clean — hexo s) 登录本地服务器 (localhost:4000)界面出现: 解决方案:npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive(安装 Apollo Github 的依赖包) 安装后,hexo clean —&gt;hexo s—&gt;hexo d本地就可以正常运行]]></content>
       <categories>
         <category>更换主题</category>
       </categories>
