@@ -54,7 +54,7 @@
     <published>2019-04-01T08:17:15.000Z</published>
     <updated>2019-04-04T02:12:33.820Z</updated>
     
-    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑</p><ol><li>使用别人的主题 修改theme </li><li>部署发布(hexo clean   —  hexo s) </li><li>登录本地服务器 (localhost:4000)<br>界面出现:<br><img src="/blog/2019/04/01/更换主题踩得坑/error.png" alt="更换主题踩得坑"></li></ol><hr><p>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
+    <content type="html"><![CDATA[<p>使用hexo+github 搭建博客 更换主题 踩到的坑</p><ol><li>使用别人的主题 修改theme </li><li>部署发布(hexo clean   —  hexo s) </li><li>登录本地服务器 (localhost:4000)<br>界面出现:<br><img src="更换主题踩得坑/error.png" alt="更换主题踩得坑"></li></ol><hr><p>解决方案:<br>npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive<br>(安装 Apollo Github 的依赖包)</p><p>安装后,hexo clean —&gt;hexo c —&gt;hexo s<br>本地就可以正常运行</p>]]></content>
     
     <summary type="html">
     
