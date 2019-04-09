@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[python自动化测试面试题]]></title>
-    <url>%2Fgracesoul.github.io%2F2019%2F04%2F04%2Fpython%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+    <url>%2Fblog%2F2019%2F04%2F04%2Fpython%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
     <content type="text"><![CDATA[常见的python自动化测试的面试题目1. 对函数传参为可变型数据类型 进行改进1234567def add(ele,mylist=[]): mylist.append(ele) return mylist print(add(4))print(add(5))print(add(6)) 运行结果如下图: ![结果图](python自动化面试题/test1.png) 解决方法一:(最简单的方法,但是代码有点冗余) 1234567 def add(ele,mylist=[]): mylist.append(ele) return mylistprint(add(4,[]))print(add(5,[]))print(add(6,[])) 解决方法二:(推荐使用) 123456789 def add(ele,mylist=[]): if not mylist: mylist=[] mylist.append(ele) return mylistprint(add(4))print(add(5))print(add(6)) 解决方法三:(将默认参数修改为 不可变的类型) 1234567def add(ele,mylist=None): mylist.append(ele) return mylist print(add(4))print(add(5))print(add(6)) 2. 简述方法中__init__() 与__new__()的区别? 方法__new__()的特性1.1 __new__()用于创建实例,在实例创建之前调用,类级别的方法,是个静态方法1.2 __new__()至少有个参数cls,代表当前类,在实例化时由python解释器自动识别1.3 __new__()必须要返回值,返回实例对象 方法__init__()的特性2.1 __init__()用于初始化实例,在实例对象创建后被调用,对象级别的方法,用于设置对象的一些初始值2.2 __init__()至少有一个参数self,它是new()返回的实例,init()是在new()的基础上完成数据的初始化操作2.3 __init__()不需要返回值 __new__()的作用3.1 __new__() 用来继承一些不可变的class(比如:int,str,tuple)提供一个自定义类的实例化过程的途径 123class 子类名(int): def __new__(cls,value): return super(子类类名,cls).__new__(cls,abs(value)) 3.2 __new__()实现单例模式(每次初始化时只返回一个对象) 1234def __new__(cls): if not hasattr(cls,&apos;instance&apos;): cls.instance = super(子类类名,cls).__new__(cls) return cls.instance]]></content>
       <categories>
         <category>面试测试题</category>
@@ -16,7 +16,7 @@
   </entry>
   <entry>
     <title><![CDATA[更换主题踩得坑]]></title>
-    <url>%2Fgracesoul.github.io%2F2019%2F04%2F01%2F%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
+    <url>%2Fblog%2F2019%2F04%2F01%2F%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
     <content type="text"><![CDATA[使用hexo+github 搭建博客 更换主题 踩到的坑 使用别人的主题 修改theme 部署发布(hexo clean — hexo s) 登录本地服务器 (localhost:4000)界面出现: 解决方案:npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive(安装 Apollo Github 的依赖包) 安装后,hexo clean —&gt;hexo s—&gt;hexo d本地就可以正常运行]]></content>
       <categories>
         <category>更换主题</category>
@@ -29,7 +29,7 @@
   </entry>
   <entry>
     <title><![CDATA[初始hexo]]></title>
-    <url>%2Fgracesoul.github.io%2F2019%2F03%2F28%2F%E4%BD%A0%E5%A5%BD-Hexo%2F</url>
+    <url>%2Fblog%2F2019%2F03%2F28%2F%E4%BD%A0%E5%A5%BD-Hexo%2F</url>
     <content type="text"><![CDATA[初次使用Hexo,是一件非常不多的事!]]></content>
       <categories>
         <category>搭建博客</category>
@@ -43,7 +43,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2Fgracesoul.github.io%2F2019%2F03%2F28%2Fhello-world%2F</url>
+    <url>%2Fblog%2F2019%2F03%2F28%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
