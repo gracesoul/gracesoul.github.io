@@ -17,7 +17,7 @@
   <entry>
     <title><![CDATA[更换主题踩得坑]]></title>
     <url>%2F2019%2F04%2F01%2F%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[使用hexo+github 搭建博客 更换主题 踩到的坑 使用别人的主题 修改theme 部署发布(hexo clean — hexo s) 登录本地服务器 (localhost:4000)界面出现: 解决方案:npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive(安装 Apollo Github 的依赖包) 安装后,hexo clean —&gt;hexo s—&gt;hexo d本地就可以正常运行]]></content>
+    <content type="text"><![CDATA[1. 使用hexo+github 搭建博客 更换主题 踩到的坑 使用别人的主题 修改theme 部署发布(hexo clean — hexo s) 登录本地服务器 (localhost:4000)界面出现: 解决方案:npm install –save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive(安装 Apollo Github 的依赖包) 本地就可以正常运行安装后,hexo clean —&gt;hexo s 部署到github上运行:安装后,hexo clean —&gt;hexo g—&gt;hexo d 本地样式正常,但是部署到github上 远程访问 样式发生改变(样式乱)原因: 修改根目录下的配置文件: _config.yml 将url进行修改 root 不需要修改 由于参考过网上: 将root由/—&gt;改为/你的项目名 但是经过测试,没有起到作用,可能因人而异吧 配置修改如下图:]]></content>
       <categories>
         <category>更换主题</category>
       </categories>
