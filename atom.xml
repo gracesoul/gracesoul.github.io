@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-04-12T08:11:39.218Z</updated>
+  <updated>2019-04-16T08:48:08.789Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自动化测试之接口测试</title>
+    <link href="https://gracesoul.github.io/2019/04/16/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    <id>https://gracesoul.github.io/2019/04/16/自动化测试之接口测试/</id>
+    <published>2019-04-16T08:33:56.000Z</published>
+    <updated>2019-04-16T08:48:08.789Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="python自动化测试之接口测试"><a href="#python自动化测试之接口测试" class="headerlink" title="python自动化测试之接口测试"></a>python自动化测试之接口测试</h1><ol><li>项目框架的分层图:<br><img src="//gracesoul.github.io/2019/04/16/自动化测试之接口测试/level.png" alt="项目层次图"></li><li>代码</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;python自动化测试之接口测试&quot;&gt;&lt;a href=&quot;#python自动化测试之接口测试&quot; class=&quot;headerlink&quot; title=&quot;python自动化测试之接口测试&quot;&gt;&lt;/a&gt;python自动化测试之接口测试&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;项目框架的分层图
+      
+    
+    </summary>
+    
+      <category term="接口测试" scheme="https://gracesoul.github.io/categories/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="python" scheme="https://gracesoul.github.io/tags/python/"/>
+    
+      <category term="自动化" scheme="https://gracesoul.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+      <category term="接口测试" scheme="https://gracesoul.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo与markdown语法简单汇总</title>
@@ -102,38 +132,6 @@
       <category term="github" scheme="https://gracesoul.github.io/tags/github/"/>
     
       <category term="主题" scheme="https://gracesoul.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初始hexo</title>
-    <link href="https://gracesoul.github.io/2019/03/28/%E4%BD%A0%E5%A5%BD-Hexo/"/>
-    <id>https://gracesoul.github.io/2019/03/28/你好-Hexo/</id>
-    <published>2019-03-28T03:09:18.000Z</published>
-    <updated>2019-04-04T02:02:37.828Z</updated>
-    
-    <content type="html"><![CDATA[<p>初次使用Hexo,是一件非常不多的事!</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;初次使用Hexo,是一件非常不多的事!&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="搭建博客" scheme="https://gracesoul.github.io/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-      <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
-    
-      <category term="github" scheme="https://gracesoul.github.io/tags/github/"/>
-    
-      <category term="nmp" scheme="https://gracesoul.github.io/tags/nmp/"/>
-    
-      <category term="基础" scheme="https://gracesoul.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   

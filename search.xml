@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[自动化测试之接口测试]]></title>
+    <url>%2F2019%2F04%2F16%2F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[python自动化测试之接口测试 项目框架的分层图: 代码]]></content>
+      <categories>
+        <category>接口测试</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>自动化</tag>
+        <tag>接口测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo与markdown语法简单汇总]]></title>
     <url>%2F2019%2F04%2F09%2Fhexo%E4%B8%8Emarkdown%E8%AF%AD%E6%B3%95%E7%AE%80%E5%8D%95%E6%B1%87%E6%80%BB%2F</url>
     <content type="text"><![CDATA[hexo与markdown语法简单汇总hexo语法 hexo init —&gt;初始化本地文件夹为网站的根目录 hexo new post’博客名’ = hexo new ‘博客名’;简称:hexo n —&gt;新建文字(默认.md) hexo generate —&gt; 生成静态文件;简称:hexo g hexo deploy —&gt; 用于部署网站;简称:hexo d hexo server —&gt; 用于启动本地服务器;简称:hexo s5.1 hexo server -p —&gt;指定服务器端口,默认40005.2 hexo server -i —&gt;指定服务器ip地址,默认0.0.0.05.3 hexo server -s —&gt;静态模式,仅提供 public 文件夹中的文件并禁用文件监视 hexo g -d —&gt;指定生成后部署 hexo clean —&gt;用于清除缓存文件 markdown语法 标题1.1 一级标题—&gt;#1.2 二级标题—&gt;##1.3 三级标题—&gt;###1.4 四级标题—&gt;####1.5 五级标题—&gt;#####1.6 六级标题—&gt;###### 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题 字体2.1 加粗—&gt;要加粗的内容2.2 斜体—&gt;要倾斜的内容2.3 斜体加粗—&gt;要斜体加粗的内容2.4 删除线—&gt;需要加删除线的内容 引用语法:&gt;需要引用的文字内容 12&gt; 这是引用的内容&gt;&gt; 这也是引用的内容 分割线-/*三个以上即可 1234-------******** 图片 1234 语法: ![图片alt](图片地址 "图片title")---&gt;title可不加 例如:![古风](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1555065335148&amp;di=e3e3187e01f54cd7bc807b3068230a40&amp;imgtype=0&amp;src=http%3A%2F%2Fp4.gexing.com%2FG1%2FM00%2F3F%2F3D%2FrBACJlTKBjPSVP1XAAEBEKmUep8763.jpg) 超链接 12345语法: [超链接名](超链接地址 "超链接title")--&gt;title可不加例如:[简书](http://jianshu.com)[百度](http://baidu.com) 列表 1234567 7.1 无序列表---&gt;-+*都可以(符号与内容之间都要有一个空格) 7.2 有序列表---&gt;数字加点(数字与内容之间也要有空格) 7.3 列表嵌套---&gt;上一级与下一级之间敲三个空格 * 测试数据 - 测试1 + 测试2 - 测试3 表格 12345姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟 代码9.1 单行代码:代码之间分别用一个反引号括起来 单行代码 单行代码内容9.2 多行代码:代码之间分别用三个反引号括起来 123代码内容代码内容代码... 流程图 12345678st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;]]></content>
@@ -38,20 +51,6 @@
         <tag>hexo</tag>
         <tag>github</tag>
         <tag>主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初始hexo]]></title>
-    <url>%2F2019%2F03%2F28%2F%E4%BD%A0%E5%A5%BD-Hexo%2F</url>
-    <content type="text"><![CDATA[初次使用Hexo,是一件非常不多的事!]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
-        <tag>nmp</tag>
-        <tag>基础</tag>
       </tags>
   </entry>
   <entry>
