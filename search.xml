@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python自动化面试一]]></title>
+    <url>%2F2019%2F04%2F22%2Fpython%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[常见的python自动化测试的面试题目1. 给定一个只包含正整数的非空数组,返回该数组中重复次数最多的前N个数字,返回的结果按重复次数从多到少降序排列(N不存在取值非法的情况)方法一：123456789101112131415def ele_sort(data,n): d=&#123;&#125; for i in data: d[i]=data.count(i) #将元素出现的次数 作为字典键值对的value值，组成（i:d[i]==&gt;元素：元素出现的次数） print(d.items()) #type(d.items())--&gt;&lt;class 'dict_items'&gt; sort_data = sorted(d.items(),key=lambda item:item[1],reverse=True) for i in range(0,n): print('排名第&#123;&#125;的元素：&#123;&#125;，出现了&#123;&#125;次'.format(i+1,sort_data[i][0],sort_data[i][1]))if __name__ == '__main__': l = [3, 4, 5, 3, 2, 5, 6, 2, 8, 9, 2, 4, 2, 5, 6, 3, 2, 4, 5, 5, 3, 2, 1, 5, 6, 5] n = int(input('请输入小于元素个数的正整数：')) ele_sort(l,n) 方法二：（使用set集合操作） 12345678910111213141516def data_sort(data,n): data_new = set(data) #将重复的数据去掉 d=&#123;&#125; for i in data_new: d[i]=data.count(i) print(d.items()) list_data = sorted(d.items(),key=lambda item:item[1],reverse=True) for i in range(0,n): print('排名第&#123;&#125;的元素：&#123;&#125;，出现&#123;&#125;次'.format(i+1,list_data[i][0],list_data[i][1]))if __name__ == '__main__': l = [3, 4, 5, 3, 2, 5, 6, 2, 8, 9, 2, 4, 2, 5, 6, 3, 2, 4, 5, 5, 3, 2, 1, 5, 6, 5] n=int(input('请输入小于元素个数&#123;&#125;的正整数：'.format(len(set(l))))) data_sort(l,n) 代码难点解读:123456789d.items()： 1. 它的数据类型是：dict_items 以列表返回可遍历的(键, 值) 元组数组 2. 注意：返回不是列表：是一个存放多个元祖的高仿列表，[(key,value),(key,value),(key,value)...] 3. 不能用下标，可用for循环sorted(d.items(),key=lambda item:item[1],reverse=True) 1. sorted(iterable,key,reverse)函数,参数key来决定我们根据那个字段对列表元素进行排序, 2. sorted(iterable，key，reverse)函数返回一个新列表，其中包含按升序排列的iterable中的所有项 3. key=lambda 元素: 元素[字段索引] 4. lambda item:item[1] 表示对元素第二个字段(就是 value)进行排序 2. 从字符串‘abcdba‘中找出第一个不重复的字符，方法不限方法一： 使用count()函数 （查看元素在数据中出现的次数）1234567891011def find_ele(data): for i in data: if data.count(i)==1: #元素在数据data出现的次数 print('第一个不重复的字符是：&#123;&#125;'.format(i)) breakif __name__ == '__main__': s= input('请输入随意的字符串：') find_ele(s) 方法二： 使用split()切割函数(切割后 长度为2 说明该元素只存在一个)1234567891011def find_ele(data): for i in data: if len (data.split (i)) == 2: # data='abcdba' data.split(a)===&gt;['','bcdb',''], data.split(b)===&gt;['a','cd','a'] print ('第一个不重复的字符是：&#123;&#125;'.format (i)) breakif __name__ == '__main__': s = input ('请输入随意的字符串：') find_ele (s)]]></content>
+      <categories>
+        <category>面试笔试题</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>自动化测试</tag>
+        <tag>面试题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自动化测试之接口测试]]></title>
     <url>%2F2019%2F04%2F16%2F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[python自动化测试之接口测试 项目框架的分层图: 代码]]></content>
+    <content type="text"><![CDATA[python自动化测试之接口测试 项目框架的分层图: 代码2.1 common文件夹 2.1.1 do_request.py (发起http请求) 12345678910111213141516171819202122232425262728293031import requestsclass HttpRequest: def __init__(self): #保证同一个session,方便下次自动调用 self.session = requests.session() def http_request(self,method,url,data=None,json=None): if type(data)==str: #Excel取出的数据类型是:字符串,但一般传参需要的类型是:字典 data = eval(data) method = method.lower() #强制转换为小写(大写也可以,方便识别) if method == 'get': resp = self.session.request(method=method,url=url,params=data) elif method == 'post': if json: resp = self.session.request(method=method,url=url,json=json) else: resp = self.session.request(method=method,url=url,data=data) else: print('暂不支持其他的请求方法!!') print('请求响应:&#123;&#125;'.format(resp.status_code)) print ('响应文本:&#123;&#125;'.format (resp.text)) print('cookies:&#123;&#125;'.format(resp.cookies)) return respif __name__ == '__main__': # 注册接口 register_url = 'http://test.lemonban.com/futureloan/mvc/api/member/register' params = &#123;'mobilephone': '18871362019', 'pwd': '123456', 'regname': "test"&#125; resp = HttpRequest().http_request('post',url=register_url,data=params) print(resp.text) 2.1.2 do_excel.py (操作Excel的读写) 2.1.3 contants.py (文件的路径)]]></content>
       <categories>
         <category>接口测试</category>
       </categories>
@@ -31,12 +44,11 @@
     <url>%2F2019%2F04%2F04%2Fpython%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
     <content type="text"><![CDATA[常见的python自动化测试的面试题目1. 对函数传参为可变型数据类型 进行改进1234567def add(ele,mylist=[]): mylist.append(ele) return mylist print(add(4))print(add(5))print(add(6)) 运行结果如下图: 解决方法一:(最简单的方法,但是代码有点冗余) 1234567 def add(ele,mylist=[]): mylist.append(ele) return mylistprint(add(4,[]))print(add(5,[]))print(add(6,[])) 解决方法二:(推荐使用) 123456789 def add(ele,mylist=[]): if not mylist: mylist=[] mylist.append(ele) return mylistprint(add(4))print(add(5))print(add(6)) 解决方法三:(将默认参数修改为 不可变的类型) 1234567def add(ele,mylist=None): mylist.append(ele) return mylist print(add(4))print(add(5))print(add(6)) 2. 简述方法中__init__() 与__new__()的区别? 方法__new__()的特性1.1 __new__()用于创建实例,在实例创建之前调用,类级别的方法,是个静态方法1.2 __new__()至少有个参数cls,代表当前类,在实例化时由python解释器自动识别1.3 __new__()必须要返回值,返回实例对象 方法__init__()的特性2.1 __init__()用于初始化实例,在实例对象创建后被调用,对象级别的方法,用于设置对象的一些初始值2.2 __init__()至少有一个参数self,它是new()返回的实例,init()是在new()的基础上完成数据的初始化操作2.3 __init__()不需要返回值 __new__()的作用3.1 __new__() 用来继承一些不可变的class(比如:int,str,tuple)提供一个自定义类的实例化过程的途径 123class 子类名(int): def __new__(cls,value): return super(子类类名,cls).__new__(cls,abs(value)) 3.2 __new__()实现单例模式(每次初始化时只返回一个对象) 1234def __new__(cls): if not hasattr(cls,'instance'): cls.instance = super(子类类名,cls).__new__(cls) return cls.instance]]></content>
       <categories>
-        <category>面试测试题</category>
+        <category>面试笔试题</category>
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>自动化</tag>
-        <tag>测试</tag>
+        <tag>自动化测试</tag>
         <tag>面试题</tag>
       </tags>
   </entry>
