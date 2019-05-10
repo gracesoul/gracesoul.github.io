@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[jenkins部署python项目踩得坑]]></title>
+    <url>%2F2019%2F05%2F10%2Fjenkins%E9%83%A8%E7%BD%B2python%E9%A1%B9%E7%9B%AE%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
+    <content type="text"><![CDATA[jenkins部署python项目踩的坑项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境在项目中 生成所有需要依赖的库 pip freeze &gt; requirements.txt在新的环境中 ，将所有的依赖包全部下载下来 pip install -r requirements.txt问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件步骤： jenkins配置 修改配置方式 保存后，点击立即构建 出现上述问题 检查pip或python是否配置环境变量 排除pip或者python未配置环境变量的问题，依旧无法解决上述问题 解决方案： win+r 进入终端窗口 进入该项目从github上pull下来的代码的路径 输入命令：pip install -r requirements.txt 输入命令：python run.py 发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错 一直很奇怪这个问题，百度好久都没有找到解决方案 再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下 将生产suds模块的文件夹找到，然后删除 重新安装 pip install -r requirements.txt 重新运行 jenkins运行成功 pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）]]></content>
+      <categories>
+        <category>jenkins部署项目</category>
+      </categories>
+      <tags>
+        <tag>jenkins构建</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[重要网址记录大全]]></title>
+    <url>%2F2019%2F04%2F26%2F%E9%87%8D%E8%A6%81%E7%BD%91%E5%9D%80%E8%AE%B0%E5%BD%95%E5%A4%A7%E5%85%A8%2F</url>
+    <content type="text"><![CDATA[jenkins官网jenkins：https://jenkins.io/download/外文网（世界级）：https://www.edx.org慕课网：http://www.imooc.com/course/listw3school（在线编程基础知识）：http://www.w3cschool.cn/tutorial慕课学院：http://mooc.guokr.com/course/?dept_id=52&amp;order=hot学堂在线：http://www.xuetangx.com/LeetCode Online Judge(英文网，在线编程答疑)：https://leetcode.com/mooc中国：http://www.mooc.cn/]]></content>
+      <categories>
+        <category>网址记录</category>
+      </categories>
+      <tags>
+        <tag>闲谈</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jenkins安装]]></title>
+    <url>%2F2019%2F04%2F24%2Fjenkins%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[python自动化面试一]]></title>
     <url>%2F2019%2F04%2F22%2Fpython%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E4%B8%80%2F</url>
     <content type="text"><![CDATA[常见的python自动化测试的面试题目1. 给定一个只包含正整数的非空数组,返回该数组中重复次数最多的前N个数字,返回的结果按重复次数从多到少降序排列(N不存在取值非法的情况)方法一：123456789101112131415def ele_sort(data,n): d=&#123;&#125; for i in data: d[i]=data.count(i) #将元素出现的次数 作为字典键值对的value值，组成（i:d[i]==&gt;元素：元素出现的次数） print(d.items()) #type(d.items())--&gt;&lt;class 'dict_items'&gt; sort_data = sorted(d.items(),key=lambda item:item[1],reverse=True) for i in range(0,n): print('排名第&#123;&#125;的元素：&#123;&#125;，出现了&#123;&#125;次'.format(i+1,sort_data[i][0],sort_data[i][1]))if __name__ == '__main__': l = [3, 4, 5, 3, 2, 5, 6, 2, 8, 9, 2, 4, 2, 5, 6, 3, 2, 4, 5, 5, 3, 2, 1, 5, 6, 5] n = int(input('请输入小于元素个数的正整数：')) ele_sort(l,n) 方法二：（使用set集合操作） 12345678910111213141516def data_sort(data,n): data_new = set(data) #将重复的数据去掉 d=&#123;&#125; for i in data_new: d[i]=data.count(i) print(d.items()) list_data = sorted(d.items(),key=lambda item:item[1],reverse=True) for i in range(0,n): print('排名第&#123;&#125;的元素：&#123;&#125;，出现&#123;&#125;次'.format(i+1,list_data[i][0],list_data[i][1]))if __name__ == '__main__': l = [3, 4, 5, 3, 2, 5, 6, 2, 8, 9, 2, 4, 2, 5, 6, 3, 2, 4, 5, 5, 3, 2, 1, 5, 6, 5] n=int(input('请输入小于元素个数&#123;&#125;的正整数：'.format(len(set(l))))) data_sort(l,n) 代码难点解读:123456789d.items()： 1. 它的数据类型是：dict_items 以列表返回可遍历的(键, 值) 元组数组 2. 注意：返回不是列表：是一个存放多个元祖的高仿列表，[(key,value),(key,value),(key,value)...] 3. 不能用下标，可用for循环sorted(d.items(),key=lambda item:item[1],reverse=True) 1. sorted(iterable,key,reverse)函数,参数key来决定我们根据那个字段对列表元素进行排序, 2. sorted(iterable，key，reverse)函数返回一个新列表，其中包含按升序排列的iterable中的所有项 3. key=lambda 元素: 元素[字段索引] 4. lambda item:item[1] 表示对元素第二个字段(就是 value)进行排序 2. 从字符串‘abcdba‘中找出第一个不重复的字符，方法不限方法一： 使用count()函数 （查看元素在数据中出现的次数）1234567891011def find_ele(data): for i in data: if data.count(i)==1: #元素在数据data出现的次数 print('第一个不重复的字符是：&#123;&#125;'.format(i)) breakif __name__ == '__main__': s= input('请输入随意的字符串：') find_ele(s) 方法二： 使用split()切割函数(切割后 长度为2 说明该元素只存在一个)1234567891011def find_ele(data): for i in data: if len (data.split (i)) == 2: # data='abcdba' data.split(a)===&gt;['','bcdb',''], data.split(b)===&gt;['a','cd','a'] print ('第一个不重复的字符是：&#123;&#125;'.format (i)) breakif __name__ == '__main__': s = input ('请输入随意的字符串：') find_ele (s)]]></content>

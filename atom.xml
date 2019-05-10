@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-04-22T03:28:07.578Z</updated>
+  <updated>2019-05-10T09:49:20.997Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jenkins部署python项目踩得坑</title>
+    <link href="https://gracesoul.github.io/2019/05/10/jenkins%E9%83%A8%E7%BD%B2python%E9%A1%B9%E7%9B%AE%E8%B8%A9%E5%BE%97%E5%9D%91/"/>
+    <id>https://gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/</id>
+    <published>2019-05-10T09:15:23.000Z</published>
+    <updated>2019-05-10T09:49:20.997Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="jenkins部署python项目踩的坑"><a href="#jenkins部署python项目踩的坑" class="headerlink" title="jenkins部署python项目踩的坑"></a>jenkins部署python项目踩的坑</h3><p>项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境<br>在项目中 生成所有需要依赖的库</p><ol><li>pip freeze &gt; requirements.txt<br>在新的环境中 ，将所有的依赖包全部下载下来</li><li><p>pip install -r requirements.txt<br>问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件<br><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/error.png" alt="错误界面"><br>步骤：</p><ol><li>jenkins配置 </li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep1.png" alt="配置界面"></li><li>修改配置方式</li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep2.png" alt="配置界面"></li><li>保存后，点击立即构建 出现上述问题</li><li>检查pip或python是否配置环境变量</li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep3.png" alt="配置界面"></li><li>排除pip或者python未配置环境变量的问题，依旧无法解决上述问题</li></ol></li></ol><p>解决方案：</p><ol><li>win+r 进入终端窗口</li><li>进入该项目从github上pull下来的代码的路径</li><li>输入命令：pip install -r requirements.txt</li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep4.png" alt="配置界面"></li><li>输入命令：python run.py</li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep5.png" alt="配置界面"></li><li>发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错</li><li>一直很奇怪这个问题，百度好久都没有找到解决方案</li><li>再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下</li><li><img src="//gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/sep6.png" alt="配置界面"></li><li>将生产suds模块的文件夹找到，然后删除</li><li>重新安装 pip install -r requirements.txt</li><li>重新运行 jenkins运行成功</li><li>pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;a href=&quot;#jenkins部署python项目踩的坑&quot; class=&quot;headerlink&quot; title=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;/a&gt;jenkins部署python项目踩的坑&lt;/h3&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="jenkins部署项目" scheme="https://gracesoul.github.io/categories/jenkins%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="jenkins构建" scheme="https://gracesoul.github.io/tags/jenkins%E6%9E%84%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重要网址记录大全</title>
+    <link href="https://gracesoul.github.io/2019/04/26/%E9%87%8D%E8%A6%81%E7%BD%91%E5%9D%80%E8%AE%B0%E5%BD%95%E5%A4%A7%E5%85%A8/"/>
+    <id>https://gracesoul.github.io/2019/04/26/重要网址记录大全/</id>
+    <published>2019-04-26T08:27:14.000Z</published>
+    <updated>2019-05-05T05:40:23.012Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://jenkins.io/download/" target="_blank" rel="noopener">jenkins官网</a><br>jenkins：<a href="https://jenkins.io/download/" target="_blank" rel="noopener">https://jenkins.io/download/</a><br>外文网（世界级）：<a href="https://www.edx.org" target="_blank" rel="noopener">https://www.edx.org</a><br>慕课网：<a href="http://www.imooc.com/course/list" target="_blank" rel="noopener">http://www.imooc.com/course/list</a><br>w3school（在线编程基础知识）：<a href="http://www.w3cschool.cn/tutorial" target="_blank" rel="noopener">http://www.w3cschool.cn/tutorial</a><br>慕课学院：<a href="http://mooc.guokr.com/course/?dept_id=52&amp;order=hot" target="_blank" rel="noopener">http://mooc.guokr.com/course/?dept_id=52&amp;order=hot</a><br>学堂在线：<a href="http://www.xuetangx.com/" target="_blank" rel="noopener">http://www.xuetangx.com/</a><br>LeetCode Online Judge(英文网，在线编程答疑)：<a href="https://leetcode.com/" target="_blank" rel="noopener">https://leetcode.com/</a><br>mooc中国：<a href="http://www.mooc.cn/" target="_blank" rel="noopener">http://www.mooc.cn/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://jenkins.io/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jenkins官网&lt;/a&gt;&lt;br&gt;jenkins：&lt;a href=&quot;https://jenkins.io/download/&quot; tar
+      
+    
+    </summary>
+    
+      <category term="网址记录" scheme="https://gracesoul.github.io/categories/%E7%BD%91%E5%9D%80%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="闲谈" scheme="https://gracesoul.github.io/tags/%E9%97%B2%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins安装</title>
+    <link href="https://gracesoul.github.io/2019/04/24/jenkins%E5%AE%89%E8%A3%85/"/>
+    <id>https://gracesoul.github.io/2019/04/24/jenkins安装/</id>
+    <published>2019-04-24T02:18:14.000Z</published>
+    <updated>2019-04-24T02:18:14.488Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>python自动化面试一</title>
