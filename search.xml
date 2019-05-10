@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[jenkins部署python项目踩得坑]]></title>
     <url>%2F2019%2F05%2F10%2Fjenkins%E9%83%A8%E7%BD%B2python%E9%A1%B9%E7%9B%AE%E8%B8%A9%E5%BE%97%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[jenkins部署python项目踩的坑项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境在项目中 生成所有需要依赖的库 pip freeze &gt; requirements.txt在新的环境中 ，将所有的依赖包全部下载下来 pip install -r requirements.txt问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件步骤： jenkins配置 修改配置方式 保存后，点击立即构建 出现上述问题 检查pip或python是否配置环境变量 排除pip或者python未配置环境变量的问题，依旧无法解决上述问题 解决方案： win+r 进入终端窗口 进入该项目从github上pull下来的代码的路径 输入命令：pip install -r requirements.txt 输入命令：python run.py 发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错 一直很奇怪这个问题，百度好久都没有找到解决方案 再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下 将生产suds模块的文件夹找到，然后删除 重新安装 pip install -r requirements.txt 重新运行 jenkins运行成功 pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）]]></content>
+    <content type="text"><![CDATA[jenkins部署python项目踩的坑项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境在项目中 生成所有需要依赖的库 pip freeze &gt; requirements.txt在新的环境中 ，将所有的依赖包全部下载下来 pip install -r requirements.txt问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件 步骤： jenkins配置 修改配置方式 保存后，点击立即构建 出现上述问题 检查pip或python是否配置环境变量 排除pip或者python未配置环境变量的问题，依旧无法解决上述问题 解决方案： win+r 进入终端窗口 进入该项目从github上pull下来的代码的路径 输入命令：pip install -r requirements.txt 输入命令：python run.py 发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错 一直很奇怪这个问题，百度好久都没有找到解决方案 再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下 将生产suds模块的文件夹找到，然后删除 重新安装 pip install -r requirements.txt 重新运行 jenkins运行成功 pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）]]></content>
       <categories>
         <category>jenkins部署项目</category>
       </categories>
