@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-17T07:32:59.183Z</updated>
+  <updated>2019-05-17T03:24:20.386Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>测试</title>
-    <link href="https://gracesoul.github.io/2019/05/17/%E6%B5%8B%E8%AF%95/"/>
-    <id>https://gracesoul.github.io/2019/05/17/测试/</id>
-    <published>2019-05-17T07:31:19.000Z</published>
-    <updated>2019-05-17T07:32:59.183Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/2019/05/17/测试/error.png" alt="错误界面"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/2019/05/17/测试/error.png&quot; alt=&quot;错误界面&quot;&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>python自动化面试编程题（一）</title>
@@ -71,16 +49,16 @@
     <link href="https://gracesoul.github.io/2019/05/10/jenkins%E9%83%A8%E7%BD%B2python%E9%A1%B9%E7%9B%AE%E8%B8%A9%E5%BE%97%E5%9D%91/"/>
     <id>https://gracesoul.github.io/2019/05/10/jenkins部署python项目踩得坑/</id>
     <published>2019-05-10T09:15:23.000Z</published>
-    <updated>2019-05-17T06:07:32.217Z</updated>
+    <updated>2019-05-17T08:22:57.183Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="jenkins部署python项目踩的坑"><a href="#jenkins部署python项目踩的坑" class="headerlink" title="jenkins部署python项目踩的坑"></a>jenkins部署python项目踩的坑</h2><h5 id="项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境"><a href="#项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境" class="headerlink" title="项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境"></a>项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境</h5><p>在项目中 生成所有需要依赖的库</p><ol><li>pip freeze &gt; requirements.txt<br>在新的环境中 ，将所有的依赖包全部下载下来</li><li>pip install -r requirements.txt<h5 id="问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件"><a href="#问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件" class="headerlink" title="问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件"></a>问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件</h5> <img src="/2019/05/10/jenkins部署python项目踩得坑/error.png" alt="错误界面"></li></ol><h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><ol><li>jenkins配置<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep1.png" alt="配置界面"></li><li>修改配置方式<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep2.png" alt="配置界面"></li><li>保存后，点击立即构建 出现上述问题</li><li>检查pip或python是否配置环境变量<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep3.png" alt="配置界面"></li><li>排除pip或者python未配置环境变量的问题，依旧无法解决上述问题</li></ol><h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol><li>win+r 进入终端窗口</li><li>进入该项目从github上pull下来的代码的路径</li><li>输入命令：pip install -r requirements.txt<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep4.png" alt="配置界面"></li><li>输入命令：python run.py<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep5.png" alt="配置界面"></li><li>发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错</li><li>一直很奇怪这个问题，百度好久都没有找到解决方案</li><li>再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep6.png" alt="配置界面"></li><li>将生产suds模块的文件夹找到，然后删除</li><li>重新安装 pip install -r requirements.txt</li><li>重新运行 jenkins运行成功</li><li>pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="jenkins部署python项目踩的坑"><a href="#jenkins部署python项目踩的坑" class="headerlink" title="jenkins部署python项目踩的坑"></a>jenkins部署python项目踩的坑</h2><h5 id="项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境"><a href="#项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境" class="headerlink" title="项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境"></a>项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境</h5><p>在项目中 生成所有需要依赖的库</p><ol><li>pip freeze &gt; requirements.txt<br>在新的环境中 ，将所有的依赖包全部下载下来</li></ol><a id="more"></a><ol start="2"><li>pip install -r requirements.txt<h5 id="问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件"><a href="#问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件" class="headerlink" title="问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件"></a>问题：pip不是内部或外部命令，也不是可运行的程序或批处理文件</h5> <img src="/2019/05/10/jenkins部署python项目踩得坑/error.png" alt="错误界面"></li></ol><h4 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h4><ol><li>jenkins配置<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep1.png" alt="配置界面"></li><li>修改配置方式<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep2.png" alt="配置界面"></li><li>保存后，点击立即构建 出现上述问题</li><li>检查pip或python是否配置环境变量<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep3.png" alt="配置界面"></li><li>排除pip或者python未配置环境变量的问题，依旧无法解决上述问题</li></ol><h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol><li>win+r 进入终端窗口</li><li>进入该项目从github上pull下来的代码的路径</li><li>输入命令：pip install -r requirements.txt<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep4.png" alt="配置界面"></li><li>输入命令：python run.py<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep5.png" alt="配置界面"></li><li>发现终端运行是成功的，但是一样的路径，jenkins 构建 输入Windows批处理命令，运行出错，报pip出错</li><li>一直很奇怪这个问题，百度好久都没有找到解决方案</li><li>再次去查看 依赖包安装成功后的路径 发现suds模块安装到其他目录去了，没有按照到python目录下<br><img src="/2019/05/10/jenkins部署python项目踩得坑/sep6.png" alt="配置界面"></li><li>将生产suds模块的文件夹找到，然后删除</li><li>重新安装 pip install -r requirements.txt</li><li>重新运行 jenkins运行成功</li><li>pip不是内部或外部命令，也不是可运行的程序或批处理文件 该问题完美解决（主要是第一次安装环境的时候，安装目录出错了）</li></ol>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;a href=&quot;#jenkins部署python项目踩的坑&quot; class=&quot;headerlink&quot; title=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;/a&gt;jenkins部署python项目踩的坑&lt;/h2&gt;&lt;
-      
+      &lt;h2 id=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;a href=&quot;#jenkins部署python项目踩的坑&quot; class=&quot;headerlink&quot; title=&quot;jenkins部署python项目踩的坑&quot;&gt;&lt;/a&gt;jenkins部署python项目踩的坑&lt;/h2&gt;&lt;h5 id=&quot;项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境&quot;&gt;&lt;a href=&quot;#项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境&quot; class=&quot;headerlink&quot; title=&quot;项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境&quot;&gt;&lt;/a&gt;项目：webservice项目部署到jenkins中，需要安装python项目中所需要的依赖环境&lt;/h5&gt;&lt;p&gt;在项目中 生成所有需要依赖的库&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;pip freeze &amp;gt; requirements.txt&lt;br&gt;在新的环境中 ，将所有的依赖包全部下载下来&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
@@ -272,27 +250,6 @@
       <category term="github" scheme="https://gracesoul.github.io/tags/github/"/>
     
       <category term="主题" scheme="https://gracesoul.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://gracesoul.github.io/2019/03/28/hello-world/"/>
-    <id>https://gracesoul.github.io/2019/03/28/hello-world/</id>
-    <published>2019-03-28T02:03:00.707Z</published>
-    <updated>2019-03-28T02:03:00.707Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   
