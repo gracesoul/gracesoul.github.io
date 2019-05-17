@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-17T03:24:20.386Z</updated>
+  <updated>2019-05-17T07:32:59.183Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://gracesoul.github.io/2019/05/17/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://gracesoul.github.io/2019/05/17/测试/</id>
+    <published>2019-05-17T07:31:19.000Z</published>
+    <updated>2019-05-17T07:32:59.183Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="测试/error.png" alt="错误界面"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;测试/error.png&quot; alt=&quot;错误界面&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>python自动化面试编程题（一）</title>
