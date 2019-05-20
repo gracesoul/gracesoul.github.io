@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-20T08:03:40.345Z</updated>
+  <updated>2019-05-20T10:20:02.290Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -21,27 +21,27 @@
     <link href="https://gracesoul.github.io/2019/05/20/SQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E4%B9%8B%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>https://gracesoul.github.io/2019/05/20/SQL数据库操作之简单操作命令/</id>
     <published>2019-05-20T06:30:05.000Z</published>
-    <updated>2019-05-20T08:03:40.345Z</updated>
+    <updated>2019-05-20T10:20:02.290Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="MySQL数据库操作的命令之简单语法汇总"><a href="#MySQL数据库操作的命令之简单语法汇总" class="headerlink" title="MySQL数据库操作的命令之简单语法汇总"></a>MySQL数据库操作的命令之简单语法汇总</h4><p>SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)<br>DML:</p><pre><code> 1. select (查询)2. update (更新)3. delete (删除)4. insert into (插入)</code></pre><a id="more"></a><p>DDL:</p><pre><code>1. create database (新建数据库)2. alter database (修改数据库)3. create table (新建表)4. alter table (修改表)5. drop table (删除表)6. create index (创建索引)7. drop index (删除索引)</code></pre><p>语法分析：</p><ol><li><p>select语法</p><ol><li>select 列表名 from 表名   从数据库中查询某一列的值</li><li>(select * from 表名)      从数据库中查询所有</li><li>select distinct 列表名 from 表名  关键词 DISTINCT 用于返回唯一不同的值(去掉重复的值)</li><li><p>select 列表名 from 表名 where 列表名 运算符 值 (值为字符，用单双引号都可以，值为数值，不需要引号)</p></li><li><p>select 列表名 from 表名 where 列表名 运算符 值 and/or 列表名 运算符 值<br> 运算符  and  or (and 全真为真  or 全假为假)<br> and: 若第一个条件和第二个条件都成立，则and运算符显示一条记录<br> or: 若多个条件中只要有一个条件成立，则or运算符显示一条记录</p></li><li>select 列表名 from 表名 order by 列表名<br> select 列表名 from 表名 order by 列表名 DESC<br> order by 语句根据指定的列 对结果进行排序（默认升序排序 ASC）,降序排序 使用关键字DESC</li></ol></li><li>insert into 语法<ol><li>insert into 表名 values (值1,值2,…..)  向表中插入新的行(值全部要根据列 完整填写)</li><li>insert into 表名(列1,列2,…)values(值1,值2,….)  指定要插入数据的列</li></ol></li><li>update语法<ol><li>update 表名 set 列名 = 新值 where 列名 = 某值  (修改表中的某一列的数据)</li><li>update 表名 set 列名1 = 新值,列名2 = 新值,… where 列名 = 某一值 (更新某一行中的若干列数据)</li></ol></li><li>delete语法<ol><li>delete from 表名 where 列名 = 值  (删除某一行)</li><li>delete from 表名 / delete * from 表名  (删除所有行)</li></ol></li><li>运算符</li></ol><hr><table><thead><tr><th>操作符</th><th style="text-align:center">描述</th></tr></thead><tbody><tr><td>=</td><td style="text-align:center">等于</td></tr><tr><td>&lt;&gt;</td><td style="text-align:center">不等于(!=)</td></tr><tr><td>&gt;</td><td style="text-align:center">大于</td></tr><tr><td>&lt;</td><td style="text-align:center">小于</td></tr><tr><td>&gt;=</td><td style="text-align:center">大于等于</td></tr><tr><td>&lt;=</td><td style="text-align:center">小于等于</td></tr><tr><td>BETWEEN</td><td style="text-align:center">在某个范围内</td></tr><tr><td>LIKE</td><td style="text-align:center">搜索某种模式</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h4 id="MySQL数据库操作的命令之简单语法汇总"><a href="#MySQL数据库操作的命令之简单语法汇总" class="headerlink" title="MySQL数据库操作的命令之简单语法汇总"></a>MySQL数据库操作的命令之简单语法汇总</h4><p>SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)<br>DML:</p><ol><li>select (查询)</li><li>update (更新)</li><li>delete (删除)</li><li>insert into (插入)<a id="more"></a></li></ol><p>DDL:</p><ol><li>create database (新建数据库)</li><li>alter database (修改数据库)</li><li>create table (新建表)</li><li>alter table (修改表)</li><li>drop table (删除表)</li><li>create index (创建索引)</li><li>drop index (删除索引)</li></ol><p>语法分析：</p><ol><li><p>select语法</p><ol><li>select 列表名 from 表名   从数据库中查询某一列的值</li><li>(select * from 表名)      从数据库中查询所有</li><li>select distinct 列表名 from 表名  关键词 DISTINCT 用于返回唯一不同的值(去掉重复的值)</li><li><p>select 列表名 from 表名 where 列表名 运算符 值 (值为字符，用单双引号都可以，值为数值，不需要引号)</p></li><li><p>select 列表名 from 表名 where 列表名 运算符 值 and/or 列表名 运算符 值<br> 运算符  and  or (and 全真为真  or 全假为假)<br> and: 若第一个条件和第二个条件都成立，则and运算符显示一条记录<br> or: 若多个条件中只要有一个条件成立，则or运算符显示一条记录</p></li><li>select 列表名 from 表名 order by 列表名<br> select 列表名 from 表名 order by 列表名 DESC<br> order by 语句根据指定的列 对结果进行排序（默认升序排序 ASC）,降序排序 使用关键字DESC</li></ol></li><li>insert into 语法<ol><li>insert into 表名 values (值1,值2,…..)  向表中插入新的行(值全部要根据列 完整填写)</li><li>insert into 表名(列1,列2,…)values(值1,值2,….)  指定要插入数据的列</li></ol></li><li>update语法<ol><li>update 表名 set 列名 = 新值 where 列名 = 某值  (修改表中的某一列的数据)</li><li>update 表名 set 列名1 = 新值,列名2 = 新值,… where 列名 = 某一值 (更新某一行中的若干列数据)</li></ol></li><li>delete语法<ol><li>delete from 表名 where 列名 = 值  (删除某一行)</li><li>delete from 表名 / delete * from 表名  (删除所有行)</li></ol></li><li>like 操作符语法<ol><li>select * from 表名 where 列名 like ‘’(模式 也就是 通配符)</li></ol></li><li>in 操作符语法<ol><li>select 列名 from 表名 where 列名 in (value1,value2,….) 筛选列名值存在value值中的数据</li></ol></li><li>between操作符语法<ol><li>select * from 表名 where 列名 between value1 and value2 </li><li>BETWEEN … AND 会选取介于两个值之间的数据范围。这些值可以是数值、文本或者日期。(部分会包括临界值)</li></ol></li><li>Alias 操作符语法（别名）<ol><li>select 列名 from 表名 AS 表别名      (指定表的别名)</li><li>select 列名 AS 列别名 from 表名      (指定列的列名)</li><li>使用 SQL，可以为列名称和表名称指定别名（Alias)</li></ol></li><li>Join 联表查询<ol><li>join: 如果表中有至少一个匹配，则返回1行 (加上ON)</li><li>left join :即使右表中没有匹配，也从左表返回所有的行</li><li>right join : 即使左表中没有匹配，也从右表返回所有的行</li><li>full join : 只要其中一个表存在匹配，就返回行 (也称full outer join 外连接)</li><li>inner join : 内连接   (inner join 表2 ON)</li><li>select * from 表1,表2 where 表1.主键 = 表2.key(表1的主键作为表2的外键  值是一样的)</li><li>select * from 表1 inner join 表2 ON 表1.主键 = 表2.key </li><li>SELECT 列名s FROM 表1 INNER JOIN 表2 ON表.列名=表2.列名</li><li>SELECT 列名s FROM 表1 left join 表2 ON表.列名=表2.列名</li><li>SELECT 列名s FROM 表1 right join 表2 ON表.列名=表2.列名</li><li>SELECT 列名s FROM 表1 full join 表2 ON表.列名=表2.列名</li></ol></li><li>union 操作符语法<ol><li>UNION 操作符用于合并两个或多个 SELECT 语句的结果集</li><li>UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同。</li><li>select 列名s from 表1 union select 列名s from  表2</li><li>UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名</li><li>UNION 命令只会选取不同的值(若两个表中有相同的数值，只取一个 不会全部显示)</li><li>UNION ALL 命令和 UNION 命令几乎是等效的，不过 UNION ALL 命令会列出所有的值。(相同的数值也会打印出来)</li></ol></li><li>create database 语法<ol><li>create database name  (创建数据库)</li></ol></li><li>create table <ol><li>CREATE TABLE 表名称<br>(<br>列名称1 数据类型,<br>列名称2 数据类型,<br>列名称3 数据类型,<br>….<br>)</li><li>用于创建数据库中的表</li></ol></li><li>SQL约束<ol><li>not null  强制列不接受 NULL 值 (如果不向字段添加值，就无法插入新记录或者更新记录)</li><li>union  约束唯一标识数据库表中的每条记录  最后加上UNIQUE (列名)</li><li>primary key 主键 主键必须包含唯一的值，主键列不能包含 NULL 值，每个表都应该有一个主键，并且每个表只能有一个主键。</li><li>foreign key</li><li>check</li><li>default</li><li>请注意，每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。</li><li>如果需要命名 UNIQUE 约束，以及为多个列定义 UNIQUE 约束（CONSTRAINT 取名 UNIQUE (列名1,列名2)）</li><li>当表已被创建时，如需在 “某一” 列创建 UNIQUE 约束 (ALTER TABLE 表名  ADD UNIQUE (Id_P))</li><li>如需命名 UNIQUE 约束，并定义多个列的 UNIQUE 约束 (ALTER TABLE 表名 ADD CONSTRAINT 取名 UNIQUE (列名1,列名2))</li><li>撤销 UNIQUE 约束 (ALTER TABLE 表名 DROP INDEX 取名)</li></ol></li><li>MySQL数据类型<ol><li>文本–》text类型<br><img src="/2019/05/20/SQL数据库操作之简单操作命令/text.png" alt="文本"></li><li>数字–》number类型<br><img src="/2019/05/20/SQL数据库操作之简单操作命令/num.png" alt="数字"></li><li>时间–》date类型<br><img src="/2019/05/20/SQL数据库操作之简单操作命令/date.png" alt="时间"></li></ol></li><li>SQL函数<ol><li>合计函数—aggregate函数<br><img src="/2019/05/20/SQL数据库操作之简单操作命令/lab1.png" alt="函数1"></li><li>纯量函数—scalar函数<br><img src="/2019/05/20/SQL数据库操作之简单操作命令/lab2.png" alt="函数2"></li></ol></li><li>运算符与通配符</li></ol><hr><table><thead><tr><th>操作符</th><th style="text-align:center">描述</th><th></th><th>通配符</th><th style="text-align:center">描述</th></tr></thead><tbody><tr><td>=</td><td style="text-align:center">等于</td><td></td><td>%</td><td style="text-align:center">替代一个或多个字符</td></tr><tr><td>&lt;&gt;</td><td style="text-align:center">不等于(!=)</td><td></td><td>_</td><td style="text-align:center">仅替代一个字符</td></tr><tr><td>&gt;</td><td style="text-align:center">大于</td><td></td><td>[charlist]</td><td style="text-align:center">字符列中的任何单一字符 (like ‘[ALN]%’ 表示匹配以A L N来头的数据 )</td></tr><tr><td>&lt;</td><td style="text-align:center">小于</td><td></td><td>[^charlist]</td><td style="text-align:center">不在字符列中的任何单一字符</td></tr><tr><td>&gt;=</td><td style="text-align:center">大于等于</td><td></td><td>[!charlist]</td><td style="text-align:center">不在字符列中的任何单一字符</td></tr><tr><td>&lt;=</td><td style="text-align:center">小于等于</td></tr><tr><td>BETWEEN</td><td style="text-align:center">在某个范围内</td></tr><tr><td>LIKE</td><td style="text-align:center">搜索某种模式</td></tr></tbody></table><hr><h5 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点"></a>需要注意的点</h5><ol><li>group by 与 where 一起使用时候： where 一定在 group by 之前</li><li>having 只能在 group by 后面，对分组后的结果进行筛选 (使用having的前提条件： 分组)</li><li>where 后的表达式 不允许使用 聚合函数</li><li>having 可以使用聚合函数</li><li>where group by  having  order by  执行顺序</li><li>order by 默认升序排序，后面必须是要排序的列名，也可以多个列名</li><li>group by 分组 必须有聚合函数（sum(),count(),avg()）配合使用</li></ol>]]></content>
     
     <summary type="html">
     
       &lt;h4 id=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;a href=&quot;#MySQL数据库操作的命令之简单语法汇总&quot; class=&quot;headerlink&quot; title=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;/a&gt;MySQL数据库操作的命令之简单语法汇总&lt;/h4&gt;&lt;p&gt;SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)&lt;br&gt;DML:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; 1. select (查询)
-2. update (更新)
-3. delete (删除)
-4. insert into (插入)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;select (查询)&lt;/li&gt;
+&lt;li&gt;update (更新)&lt;/li&gt;
+&lt;li&gt;delete (删除)&lt;/li&gt;
+&lt;li&gt;insert into (插入)&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
       <category term="数据库操作语法" scheme="https://gracesoul.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
     
     
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -257,11 +257,11 @@
       <category term="简单语法汇总" scheme="https://gracesoul.github.io/categories/%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/"/>
     
     
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
       <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
     
       <category term="markdown" scheme="https://gracesoul.github.io/tags/markdown/"/>
-    
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
