@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-20T07:10:58.027Z</updated>
+  <updated>2019-05-20T08:03:40.345Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -21,16 +21,18 @@
     <link href="https://gracesoul.github.io/2019/05/20/SQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E4%B9%8B%E7%AE%80%E5%8D%95%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
     <id>https://gracesoul.github.io/2019/05/20/SQL数据库操作之简单操作命令/</id>
     <published>2019-05-20T06:30:05.000Z</published>
-    <updated>2019-05-20T07:10:58.027Z</updated>
+    <updated>2019-05-20T08:03:40.345Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="MySQL数据库操作的命令之简单语法汇总"><a href="#MySQL数据库操作的命令之简单语法汇总" class="headerlink" title="MySQL数据库操作的命令之简单语法汇总"></a>MySQL数据库操作的命令之简单语法汇总</h4><p>SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)<br>DML:</p><pre><code>1. select (查询)2. update (更新)3. delete (删除)4. insert into (插入)</code></pre><p>DDL:</p><pre><code>1. create database (新建数据库)2. alter database (修改数据库)3. create table (新建表)4. alter table (修改表)5. drop table (删除表)6. create index (创建索引)7. drop index (删除索引)</code></pre><p>语法分析：</p><ol><li>select 列表名 from 表名   从数据库中查询某一列的值</li><li>(select * from 表名)      从数据库中查询所有</li><li>select distinct 列表名 from 表名  关键词 DISTINCT 用于返回唯一不同的值(去掉重复的值)</li><li>select 列表名 from 表名 where 列表名 运算符 值<br>操作符 | 描述<br>–|:–:<br>=  |    等于<br>&lt;&gt; | 不等于<blockquote><p> |    大于<br>&lt;  |    小于<br>= |    大于等于<br>&lt;= |    小于等于<br>BETWEEN    在某个范围内<br>LIKE    搜索某种模式</p></blockquote></li></ol>]]></content>
+    <content type="html"><![CDATA[<h4 id="MySQL数据库操作的命令之简单语法汇总"><a href="#MySQL数据库操作的命令之简单语法汇总" class="headerlink" title="MySQL数据库操作的命令之简单语法汇总"></a>MySQL数据库操作的命令之简单语法汇总</h4><p>SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)<br>DML:</p><pre><code> 1. select (查询)2. update (更新)3. delete (删除)4. insert into (插入)</code></pre><a id="more"></a><p>DDL:</p><pre><code>1. create database (新建数据库)2. alter database (修改数据库)3. create table (新建表)4. alter table (修改表)5. drop table (删除表)6. create index (创建索引)7. drop index (删除索引)</code></pre><p>语法分析：</p><ol><li><p>select语法</p><ol><li>select 列表名 from 表名   从数据库中查询某一列的值</li><li>(select * from 表名)      从数据库中查询所有</li><li>select distinct 列表名 from 表名  关键词 DISTINCT 用于返回唯一不同的值(去掉重复的值)</li><li><p>select 列表名 from 表名 where 列表名 运算符 值 (值为字符，用单双引号都可以，值为数值，不需要引号)</p></li><li><p>select 列表名 from 表名 where 列表名 运算符 值 and/or 列表名 运算符 值<br> 运算符  and  or (and 全真为真  or 全假为假)<br> and: 若第一个条件和第二个条件都成立，则and运算符显示一条记录<br> or: 若多个条件中只要有一个条件成立，则or运算符显示一条记录</p></li><li>select 列表名 from 表名 order by 列表名<br> select 列表名 from 表名 order by 列表名 DESC<br> order by 语句根据指定的列 对结果进行排序（默认升序排序 ASC）,降序排序 使用关键字DESC</li></ol></li><li>insert into 语法<ol><li>insert into 表名 values (值1,值2,…..)  向表中插入新的行(值全部要根据列 完整填写)</li><li>insert into 表名(列1,列2,…)values(值1,值2,….)  指定要插入数据的列</li></ol></li><li>update语法<ol><li>update 表名 set 列名 = 新值 where 列名 = 某值  (修改表中的某一列的数据)</li><li>update 表名 set 列名1 = 新值,列名2 = 新值,… where 列名 = 某一值 (更新某一行中的若干列数据)</li></ol></li><li>delete语法<ol><li>delete from 表名 where 列名 = 值  (删除某一行)</li><li>delete from 表名 / delete * from 表名  (删除所有行)</li></ol></li><li>运算符</li></ol><hr><table><thead><tr><th>操作符</th><th style="text-align:center">描述</th></tr></thead><tbody><tr><td>=</td><td style="text-align:center">等于</td></tr><tr><td>&lt;&gt;</td><td style="text-align:center">不等于(!=)</td></tr><tr><td>&gt;</td><td style="text-align:center">大于</td></tr><tr><td>&lt;</td><td style="text-align:center">小于</td></tr><tr><td>&gt;=</td><td style="text-align:center">大于等于</td></tr><tr><td>&lt;=</td><td style="text-align:center">小于等于</td></tr><tr><td>BETWEEN</td><td style="text-align:center">在某个范围内</td></tr><tr><td>LIKE</td><td style="text-align:center">搜索某种模式</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h4 id=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;a href=&quot;#MySQL数据库操作的命令之简单语法汇总&quot; class=&quot;headerlink&quot; title=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;/a&gt;MySQL数据库操作的命令之简单语法汇总&lt;/h4&gt;&lt;
-      
+      &lt;h4 id=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;a href=&quot;#MySQL数据库操作的命令之简单语法汇总&quot; class=&quot;headerlink&quot; title=&quot;MySQL数据库操作的命令之简单语法汇总&quot;&gt;&lt;/a&gt;MySQL数据库操作的命令之简单语法汇总&lt;/h4&gt;&lt;p&gt;SQL由两部分组成：数据操作语言(DML),数据定义语言(DDL)&lt;br&gt;DML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 1. select (查询)
+2. update (更新)
+3. delete (删除)
+4. insert into (插入)
+&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
