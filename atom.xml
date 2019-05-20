@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-20T10:20:02.290Z</updated>
+  <updated>2019-05-20T10:45:42.079Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python断言方法</title>
+    <link href="https://gracesoul.github.io/2019/05/20/python%E6%96%AD%E8%A8%80%E6%96%B9%E6%B3%95/"/>
+    <id>https://gracesoul.github.io/2019/05/20/python断言方法/</id>
+    <published>2019-05-20T10:30:13.000Z</published>
+    <updated>2019-05-20T10:45:42.079Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="python-之常用的断言方法Assert"><a href="#python-之常用的断言方法Assert" class="headerlink" title="python 之常用的断言方法Assert"></a>python 之常用的断言方法Assert</h4><ol><li>断言：是在执行自动化脚本中，判断测试用例的测试结果的过程使用的方法 </li><li>基本的断言方法提供了测试结果是True还是False。所有的断言方法都有一个msg参数，如果指定msg参数的值，则将该信息作为失败的错误信息返回<a id="more"></a><img src="/2019/05/20/python断言方法/lab.png" alt="断言"><br><img src="/2019/05/20/python断言方法/lab1.png" alt="断言"></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;python-之常用的断言方法Assert&quot;&gt;&lt;a href=&quot;#python-之常用的断言方法Assert&quot; class=&quot;headerlink&quot; title=&quot;python 之常用的断言方法Assert&quot;&gt;&lt;/a&gt;python 之常用的断言方法Assert&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;断言：是在执行自动化脚本中，判断测试用例的测试结果的过程使用的方法 &lt;/li&gt;
+&lt;li&gt;基本的断言方法提供了测试结果是True还是False。所有的断言方法都有一个msg参数，如果指定msg参数的值，则将该信息作为失败的错误信息返回&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="python之断言方法" scheme="https://gracesoul.github.io/categories/python%E4%B9%8B%E6%96%AD%E8%A8%80%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="python" scheme="https://gracesoul.github.io/tags/python/"/>
+    
+      <category term="断言方法" scheme="https://gracesoul.github.io/tags/%E6%96%AD%E8%A8%80%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>SQL数据库操作之简单操作命令</title>
@@ -39,9 +65,9 @@
       <category term="数据库操作语法" scheme="https://gracesoul.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
     
     
-      <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+      <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -257,11 +283,11 @@
       <category term="简单语法汇总" scheme="https://gracesoul.github.io/categories/%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/"/>
     
     
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
     
       <category term="markdown" scheme="https://gracesoul.github.io/tags/markdown/"/>
+    
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
