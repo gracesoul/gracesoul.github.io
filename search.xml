@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[接口自动化面试题]]></title>
+    <url>%2F2019%2F05%2F20%2F%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E9%9D%A2%E8%AF%95%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[自动化测试之接口面试题题目汇集： json和字典的区别？ -对基础数据类型的考察 测试的数据你放在哪？ -数据与脚本分离 参数化 - 数据驱动模式 下个接口请求参数依赖上个接口的返回数据 - 参数关联 依赖于登录的接口如何处理 -token和session的管理 依赖第三方的接口如何处理 -mock模拟数据返回 不可逆的操作，如何处理，比如删除一个订单这种接口如何测试 -造数据 接口产生的垃圾数据如何清理 - 数据清理 一个订单的几种状态如何全部测到，如：未处理，处理中，处理失败，处理成功 - 造数据，改数据库订单状态 python如何连接数据库操作？-数据库的连接操作 其它的就是运行出报告、代码管理（git）、运行策略和持续集成jenkins相关了 题目解答： json和字典的区别？json() 本质是字符串 str类型,是一种按照key:value键值对格式的字符串字典：是python语言中的一种数据类型(int str,float,bool,dict,tuple,list) 测试的数据你放在哪？1对于账号密码，这种管全局的参数，可以用命令行参数，单独抽出来，写的配置文件里（如ini）2对于一些一次性消耗的数据，比如注册，每次注册不一样的数，可以用随机函数生成3.对于一个接口有多组测试的参数，可以参数化，数据放yaml,text,json,excel都可以4.对于可以反复使用的数据，比如订单的各种状态需要造数据的情况，可以放到数据库，每次数据初始化，用完后再清理5.对于邮箱配置的一些参数，可以用ini配置文件6.对于全部是独立的接口项目，可以用数据驱动方式，用excel/csv管理测试的接口数据7.对于少量的静态数据，比如一个接口的测试数据，也就2-3组，可以写到py脚本的开头，十年八年都不会变更的总之不同的测试数据，可以用不同的文件管理 什么是数据驱动，如何做参数化?使用装饰器，ddt,data,unpack ddt装饰测试类，data装饰测试方法，unpack 拆包，将需要修改的数据进行参数化，方便后期数据的操作参数化的思想是代码用例写好了后，不需要改代码，只需维护测试数据就可以了，并且根据不同的测试数据生成多个用例 下个接口请求参数依赖上个接口的返回数据？1.不同的接口封装成不同的函数或方法，需要的数据return出来，用一中间变量a去接受，后面的接口传a就可以了2.使用反射机制，将上一个接口返回的数据 作为一个入参 传到下一个接口中。setattr,将返回的数据存到一个变量中 依赖于登录的接口如何处理？1.登录接口依赖token的，可以先登录后，token存到一个yaml或者json，或者ini的配置文件里面，后面所有的请求去拿这个数据就可以全局使用了2.如果是cookies的参数，可以用session自动关联 s=requires.session() 然后根据get/post方法，进行调用（s.get()）自动关联session 依赖第三方的接口如何处理?使用mock机制,去搭建一个mock服务，模拟接口返回数据 不可逆的操作，如何处理，比如删除一个订单这种接口如何测试?考查造数据的能力，接口的请求数据，很多都是需要依赖前面一个状态的。比如工作流这种，流向不同的人状态不一样，操作权限不一样，测试的时候，每种状态都要测到,就需要自己会造数据了。平常手工测试造数据，直接在数据库改字段状态。那么自动化也是一样，造数据可以用python连数据库了，做增删改查的操作测试用例前置操作，setUp做数据准备后置操作，tearDown做数据清理 接口产生的垃圾数据如何清理？造数据和数据清理，需用python连数据库了，做增删改查的操作测试用例前置操作，setUp做数据准备后置操作，tearDown做数据清理 一个订单的几种状态如何全部测到，如：未处理，处理中，处理失败，处理成功创造数据，修改数据的类型 python如何连接数据库操作？import pymysql(根据公司的数据库的类型进行连接) db=pymysql.connect(user=’’,password=’’,host=’’,db_name=’’,port=’’)使用cursor()方法获取操作游标 cursor=db.cursor() SQL 查询语句:sql=’’ 执行SQL语句：cursor.execute(sql) 获取结果：result=cursor.fetchone()cursor.close() db.close()1.新建连接，数据库的连接信息2.新建查询界面3.编写SQL语句4.执行SQL语句5.查看结果6.关闭查询7.关闭数据库的连接 git 将代码上传到github上 git add –all git commit ‘注释’ git pushgit 将github上的代码拉下来 git clone ‘github的项目地址’jenkin持续集成，发生邮件等]]></content>
+      <categories>
+        <category>接口面试题</category>
+      </categories>
+      <tags>
+        <tag>自动化测试</tag>
+        <tag>接口</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自动化测试框架的知识梳理]]></title>
     <url>%2F2019%2F05%2F17%2F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E7%9A%84%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%2F</url>
     <content type="text"><![CDATA[自动化测试框架的知识梳理 框架的意义：可读性，可维护性，可扩展性 维护与代码分离：使用数据驱动(ddt) 结构分层：数据层(testcase文件夹)，用例层(data文件夹)，逻辑层(common文件夹) 测试的步骤： 准备测试数据：设计excel，excel数据的读写，参数化替换 发起请求：判断请求的方式，请求的url(url的拼接)，参数转为字典（case.data）eval()，拿到返回结果 解析结果：断言，响应码，响应结果，响应文本，回写测试结果到Excel 框架的好处： 手工测试用例与自动用例完美结合，避免重复工作 配置灵活，根据需要快速选择执行用例/切换测试环境(不同的环境，测试环境，线上环境，设置一个总开关，决定使用的环境) 常用功能封装，逻辑清楚，易于维护(结构分层) 统一执行入口，管理测试用例集(run.py入口，生成测试报告 ) 持续集成，定时构建，快速反馈(jenkins) 代码上传到git上，持续集成到jenkins上，发邮件快速反馈结果 项目使用到的技术与框架： 语言：python(语言简洁) 测试框架：unittest 接口调用：requests(API 非常简洁) 数据驱动：ddt(装饰器：ddt(装饰测试类),data(装饰测试方法),unpack()) 数据管理：openpyxl(可以同时支持读与写) excel 写测试用例(exel,csv,json,yaml,txt) 数据库-&gt;数据数量很大的时候 数据库交互：pymysql(数据库：MySql) 数据格式的转换：eval(), json.loads() Excel读取出来的数据都是 str ，request方法的参数要求是：dict 日志处理：logging 清晰的了解执行的过程，快速定位问题(创建日志收集器) 持续集成：jenkins 解决重复发版本带来的重复工作 （配置git-》拉代码-》run-&gt;发邮件）]]></content>
@@ -37,7 +49,7 @@
   <entry>
     <title><![CDATA[重要网址记录大全]]></title>
     <url>%2F2019%2F04%2F26%2F%E9%87%8D%E8%A6%81%E7%BD%91%E5%9D%80%E8%AE%B0%E5%BD%95%E5%A4%A7%E5%85%A8%2F</url>
-    <content type="text"><![CDATA[jenkins官网jenkins：https://jenkins.io/download/外文网（世界级）：https://www.edx.org慕课网：http://www.imooc.com/course/listw3school（在线编程基础知识）：http://www.w3cschool.cn/tutorial慕课学院：http://mooc.guokr.com/course/?dept_id=52&amp;order=hot学堂在线：http://www.xuetangx.com/LeetCode Online Judge(英文网，在线编程答疑)：https://leetcode.com/mooc中国：http://www.mooc.cn/]]></content>
+    <content type="text"><![CDATA[重要网址记录大全jenkins官网jenkins：https://jenkins.io/download/外文网（世界级）：https://www.edx.org慕课网：http://www.imooc.com/course/listw3school（在线编程基础知识）：http://www.w3cschool.cn/tutorial慕课学院：http://mooc.guokr.com/course/?dept_id=52&amp;order=hot学堂在线：http://www.xuetangx.com/LeetCode Online Judge(英文网，在线编程答疑)：https://leetcode.com/mooc中国：http://www.mooc.cn/]]></content>
       <categories>
         <category>网址记录</category>
       </categories>
