@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[python断言方法]]></title>
     <url>%2F2019%2F05%2F20%2Fpython%E6%96%AD%E8%A8%80%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[python 之常用的断言方法Assert 断言：是在执行自动化脚本中，判断测试用例的测试结果的过程使用的方法 基本的断言方法提供了测试结果是True还是False。所有的断言方法都有一个msg参数，如果指定msg参数的值，则将该信息作为失败的错误信息返回]]></content>
+    <content type="text"><![CDATA[python 之常用的断言方法Assert 断言：是在执行自动化脚本中，判断测试用例的测试结果的过程使用的方法 基本的断言方法提供了测试结果是True还是False。所有的断言方法都有一个msg参数，如果指定msg参数的值，则将该信息作为失败的错误信息返回 在unittest包里面看到的比较全的断言：]]></content>
       <categories>
         <category>python之断言方法</category>
       </categories>
