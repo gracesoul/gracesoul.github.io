@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python之类与对象]]></title>
+    <url>%2F2019%2F05%2F21%2Fpython%E4%B9%8B%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%2F</url>
+    <content type="text"><![CDATA[python面向对象编程之类与对象 类的语法：class 类名: 类的解释文档 类方法(功能)，类属性(特征) def 方法名(self):pass 类名的规范：标识符 数字 字母 下划线组成 不能以数字开头 见名之意,不能使用关键字 驼峰命名： 每个单词首字母大写 万物皆对象（对象都是来自(属于)某一个类）–》类可以产生对象 创建对象：类名() —&gt; 类名+括号() 对象具有类的所有的属性和方法 。 调用：对象.属性 对象.方法 类的方法：对象方法，静态方法，类方法 在类外面：类里面的属性与方法 ：该类实例化的对象可以调用 对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身只能用对象来调用 (类不可以调用对象方法) 类方法：@classmethod def 方法名(cls)：类可以调用，对象也可以调用 用@classmethod来装饰 静态方法：@static def 方法名()类可以调用，对象也可以调用 用@static来装饰]]></content>
+      <categories>
+        <category>面向对象编程</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>类与对象</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python断言方法]]></title>
     <url>%2F2019%2F05%2F20%2Fpython%E6%96%AD%E8%A8%80%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[python 之常用的断言方法Assert 断言：是在执行自动化脚本中，判断测试用例的测试结果的过程使用的方法 基本的断言方法提供了测试结果是True还是False。所有的断言方法都有一个msg参数，如果指定msg参数的值，则将该信息作为失败的错误信息返回 在unittest包里面看到的比较全的断言：]]></content>
