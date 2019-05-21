@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-21T08:27:45.392Z</updated>
+  <updated>2019-05-21T08:45:36.946Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="https://gracesoul.github.io/2019/05/21/python%E4%B9%8B%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/"/>
     <id>https://gracesoul.github.io/2019/05/21/python之类与对象/</id>
     <published>2019-05-21T07:30:50.000Z</published>
-    <updated>2019-05-21T08:27:45.392Z</updated>
+    <updated>2019-05-21T08:45:36.946Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="python面向对象编程之类与对象"><a href="#python面向对象编程之类与对象" class="headerlink" title="python面向对象编程之类与对象"></a>python面向对象编程之类与对象</h4><ol><li>类的语法：<br>class 类名:<br>   类的解释文档<br>   类方法(功能)，类属性(特征)<br>   def 方法名(self):<pre><code>pass</code></pre></li><li>类名的规范：标识符 数字 字母 下划线组成 不能以数字开头</li><li>见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写<a id="more"></a></li><li>万物皆对象（对象都是来自(属于)某一个类）–》类可以产生对象</li><li>创建对象：类名() —&gt; 类名+括号()</li><li><strong><em>对象具有类的所有的属性和方法</em></strong> 。 调用：对象.属性  对象.方法</li><li>类的方法：对象方法，静态方法，类方法</li><li>在类外面：类里面的属性与方法 ：该类实例化的对象可以调用</li><li>对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身<br>只能用对象来调用 (<strong><em>类不可以调用对象方法</em></strong>)</li><li>类方法：@classmethod  def 方法名(cls)：<br>类可以调用，对象也可以调用 用@classmethod来装饰</li><li>静态方法：@static def 方法名()<br>类可以调用，对象也可以调用 用@static来装饰</li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<h4 id="python面向对象编程之类与对象"><a href="#python面向对象编程之类与对象" class="headerlink" title="python面向对象编程之类与对象"></a>python面向对象编程之类与对象</h4><ol><li>类的语法：<br>class 类名:<br>   类的解释文档<br>   类方法(功能)，类属性(特征)<br>   def 方法名(self):  <pre><code>pass</code></pre></li><li>类名的规范：标识符 数字 字母 下划线组成 <strong><em>不能以数字开头</em></strong></li><li>见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写<a id="more"></a></li><li>万物皆对象（对象都是来自(属于)某一个类）–》<strong><em>类可以产生对象</em></strong></li><li>创建对象：类名() —&gt; 类名+括号()</li><li><strong><em>对象具有类的所有的属性和方法</em></strong> 。 调用：对象.属性  对象.方法</li><li>类的方法：对象方法，静态方法，类方法</li><li>在类外面：类里面的属性与方法 ：该类实例化的对象可以调用</li><li>对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身<br>只能用对象来调用 (<strong><em>类不可以调用对象方法</em></strong>)</li><li>类方法：@classmethod  def 方法名(cls)： cls表示类本身，调用该方法的时候，会将类作为参数传进来<br>类可以调用，对象也可以调用 用@classmethod来装饰</li><li>静态方法：@static   def 方法名()<br>类可以调用，对象也可以调用 用@static来装饰<br>如果有这样的一个方法，它跟类里面的属性，方法，没有任何关联的时候，用不到类里面的属性，方法，就使用静态方法 </li><li></li></ol>]]></content>
     
     <summary type="html">
     
       &lt;h4 id=&quot;python面向对象编程之类与对象&quot;&gt;&lt;a href=&quot;#python面向对象编程之类与对象&quot; class=&quot;headerlink&quot; title=&quot;python面向对象编程之类与对象&quot;&gt;&lt;/a&gt;python面向对象编程之类与对象&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;类的语法：&lt;br&gt;class 类名:&lt;br&gt;   类的解释文档&lt;br&gt;   类方法(功能)，类属性(特征)&lt;br&gt;   def 方法名(self):&lt;pre&gt;&lt;code&gt;pass
+&lt;li&gt;类的语法：&lt;br&gt;class 类名:&lt;br&gt;   类的解释文档&lt;br&gt;   类方法(功能)，类属性(特征)&lt;br&gt;   def 方法名(self):  &lt;pre&gt;&lt;code&gt;pass
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;类名的规范：标识符 数字 字母 下划线组成 不能以数字开头&lt;/li&gt;
+&lt;li&gt;类名的规范：标识符 数字 字母 下划线组成 &lt;strong&gt;&lt;em&gt;不能以数字开头&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
@@ -93,9 +93,9 @@
       <category term="数据库操作语法" scheme="https://gracesoul.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
     
     
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -311,11 +311,11 @@
       <category term="简单语法汇总" scheme="https://gracesoul.github.io/categories/%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/"/>
     
     
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
       <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
     
       <category term="markdown" scheme="https://gracesoul.github.io/tags/markdown/"/>
-    
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
