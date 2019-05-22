@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-22T07:40:00.152Z</updated>
+  <updated>2019-05-22T07:51:43.285Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://gracesoul.github.io/2019/05/22/pycharm%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>https://gracesoul.github.io/2019/05/22/pycharm之常用快捷键/</id>
     <published>2019-05-22T06:57:10.000Z</published>
-    <updated>2019-05-22T07:40:00.152Z</updated>
+    <updated>2019-05-22T07:51:43.285Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="pycharm之常用快捷键"><a href="#pycharm之常用快捷键" class="headerlink" title="pycharm之常用快捷键"></a>pycharm之常用快捷键</h4><ol><li>编辑类</li><li>查找类</li><li>运行类</li><li>调试类</li><li>导航类</li><li>重构类<a id="more"></a></li><li><p>编辑类<br>Ctrl + D           复制选定的区域/行<br>Ctrl + Y           删除选定的行<br>Ctrl + /           行注释<br>Alt + Insert          自动生成代码<br>Ctrl + O              重新方法<br>Ctrl + Alt + T      选中<br>Ctrl + Shift + /      块注释<br>Ctrl + 鼠标        进入代码的定义<br>Ctrl + W              选中增加的代码块<br>Ctrl + Shift + W      回到之前状态<br>Alt + Enter          快速修正<br>Ctrl + Alt + L     代码格式化<br>Ctrl + Alt + O     自动导包<br>Ctrl + Alt + I      自动缩进<br>Ctrl + [           快速跳到代码的开头<br>Ctrl + ]           快速跳到代码的结尾<br>Shift + Enter      下一行另起一行<br>Ctrl + Shift + U      在选定的区域或代码块间切换<br>Ctrl + Delete      删除到字符结束<br>Ctrl + Backspace      删除到字符开始</p></li><li><p>替换/查找类<br>Ctrl + F            当前文件查找<br>Ctrl + R            当前文件替换<br>Ctrl + Shift + F    全局查找<br>Ctrl + Shift + R    全局替换<br>Alt + F7/Ctrl + F7  文件中查询用法<br>Ctrl + Shift + F7   文件中用法高亮显示<br>Ctrl + Alt + F7       显示用法</p></li><li><p>运行类<br>Shift + F10      运行类<br>Shift + F9       调试<br>Alt + Shift + F10 运行模式配置<br>Alt + Shift + F9  调试模式配置</p></li><li><p>调试类<br>F8                单步调试<br>F7                进入内部<br>Shift + F8        退出<br>Ctrl + F8         在当前行加上断点/断点开关<br>Ctrl + Shift + F8 查看所有断点</p></li><li><p>导航类<br>Ctrl + N               快速查找类，也可查找当前工程中的文件，以文件名查找<br>Ctrl + Tab              在窗口间进行切换<br>Ctrl+B / Ctrl+Click      跳转到声明<br>Ctrl + Alt + B          跳转到实现<br>Ctrl + Shift + I          查看快速定义<br>Ctrl + Shift + B          跳转到类型声明<br>Ctrl + U                  跳转到父方法、父类<br>Alt + Up/Down          跳转到上一个、下一个方法<br>Ctrl + F12              弹出文件结构<br>Ctrl + H                  类型层次结构<br>Ctrl + Shift + H          方法层次结构<br>Ctrl + Alt + H          调用层次结构<br>F2 / Shift + F2          下一条、前一条高亮的错误</p></li><li><p>重构类<br>F5                  复制<br>F6                  剪切<br>Alt + Delete          安全删除<br>Shift + F6          方法或变量重命名<br>Ctrl + F6          更改签名<br>Ctrl + Alt + N      内联<br>Ctrl + Alt + M      提取方法<br>Ctrl + Alt + V      提取属性<br>Ctrl + Alt + F      提取字段<br>Ctrl + Alt + C      提取常量<br>Ctrl + Alt + P      提取参数</p></li></ol>]]></content>
+    <content type="html"><![CDATA[<h4 id="pycharm之常用快捷键"><a href="#pycharm之常用快捷键" class="headerlink" title="pycharm之常用快捷键"></a>pycharm之常用快捷键</h4><ol><li>编辑类</li><li>查找类</li><li>运行类</li><li>调试类</li><li>导航类</li><li>重构类<a id="more"></a></li></ol><hr><ol><li><p>编辑类<br>Ctrl + D          —————&gt;           复制选定的区域/行<br>Ctrl + Y          —————&gt;           删除选定的行<br>Ctrl + /          —————&gt;           行注释<br>Alt + Insert      —————&gt;          自动生成代码<br>Ctrl + O          —————&gt;              重新方法<br>Ctrl + Alt + T    —————&gt;      选中<br>Ctrl + Shift + /  —————&gt;      块注释<br>Ctrl + 鼠标       —————&gt;        进入代码的定义<br>Ctrl + W          —————&gt;              选中增加的代码块<br>Ctrl + Shift + W  —————&gt;      回到之前状态<br>Alt + Enter       —————&gt;          快速修正<br>Ctrl + Alt + L    —————&gt;     代码格式化<br>Ctrl + Alt + O    —————&gt;     自动导包<br>Ctrl + Alt + I    —————&gt;      自动缩进<br>Ctrl + [          —————&gt;           快速跳到代码的开头<br>Ctrl + ]          —————&gt;           快速跳到代码的结尾<br>Shift + Enter     —————&gt;      下一行另起一行<br>Ctrl + Shift + U  —————&gt;      在选定的区域或代码块间切换<br>Ctrl + Delete     —————&gt;      删除到字符结束<br>Ctrl + Backspace  —————&gt;      删除到字符开始</p></li><li><p>替换/查找类<br>Ctrl + F            —————&gt;            当前文件查找<br>Ctrl + R            —————&gt;            当前文件替换<br>Ctrl + Shift + F    —————&gt;    全局查找<br>Ctrl + Shift + R    —————&gt;    全局替换<br>Alt + F7/Ctrl + F7  —————&gt;  文件中查询用法<br>Ctrl + Shift + F7   —————&gt;   文件中用法高亮显示<br>Ctrl + Alt + F7     —————&gt;       显示用法</p></li><li><p>运行类<br>Shift + F10         —————&gt;      运行类<br>Shift + F9          —————&gt;       调试<br>Alt + Shift + F10   —————&gt; 运行模式配置<br>Alt + Shift + F9    —————&gt;  调试模式配置</p></li><li><p>调试类<br>F8                —————&gt;                单步调试<br>F7                —————&gt;                进入内部<br>Shift + F8        —————&gt;        退出<br>Ctrl + F8         —————&gt; 在当前行加上断点/断点开关<br>Ctrl + Shift + F8 —————&gt; 查看所有断点</p></li><li><p>导航类<br>Ctrl + N                —————&gt;               快速查找类，也可查找当前工程中的文件，以文件名查找<br>Ctrl + Tab              —————&gt;              在窗口间进行切换<br>Ctrl+B / Ctrl+Click     —————&gt;      跳转到声明<br>Ctrl + Alt + B           —————&gt;          跳转到实现<br>Ctrl + Shift + I           —————&gt;          查看快速定义<br>Ctrl + Shift + B           —————&gt;          跳转到类型声明<br>Ctrl + U                   —————&gt;                  跳转到父方法、父类<br>Alt + Up/Down           —————&gt;          跳转到上一个、下一个方法<br>Ctrl + F12               —————&gt;              弹出文件结构<br>Ctrl + H                   —————&gt;                  类型层次结构<br>Ctrl + Shift + H           —————&gt;          方法层次结构<br>Ctrl + Alt + H           —————&gt;          调用层次结构<br>F2 / Shift + F2           —————&gt;          下一条、前一条高亮的错误</p></li><li><p>重构类<br>F5                —————&gt;      复制<br>F6                —————&gt;      剪切<br>Alt + Delete        —————&gt;      安全删除<br>Shift + F6        —————&gt;      方法或变量重命名<br>Ctrl + F6        —————&gt;      更改签名<br>Ctrl + Alt + N    —————&gt;      内联<br>Ctrl + Alt + M    —————&gt;      提取方法<br>Ctrl + Alt + V    —————&gt;      提取属性<br>Ctrl + Alt + F    —————&gt;      提取字段<br>Ctrl + Alt + C    —————&gt;      提取常量<br>Ctrl + Alt + P    —————&gt;      提取参数</p></li></ol>]]></content>
     
     <summary type="html">
     
@@ -120,9 +120,9 @@
       <category term="数据库操作语法" scheme="https://gracesoul.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
     
     
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -338,11 +338,11 @@
       <category term="简单语法汇总" scheme="https://gracesoul.github.io/categories/%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/"/>
     
     
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
       <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
     
       <category term="markdown" scheme="https://gracesoul.github.io/tags/markdown/"/>
-    
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   

@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[pycharm之常用快捷键]]></title>
     <url>%2F2019%2F05%2F22%2Fpycharm%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
-    <content type="text"><![CDATA[pycharm之常用快捷键 编辑类 查找类 运行类 调试类 导航类 重构类 编辑类Ctrl + D 复制选定的区域/行Ctrl + Y 删除选定的行Ctrl + / 行注释Alt + Insert 自动生成代码Ctrl + O 重新方法Ctrl + Alt + T 选中Ctrl + Shift + / 块注释Ctrl + 鼠标 进入代码的定义Ctrl + W 选中增加的代码块Ctrl + Shift + W 回到之前状态Alt + Enter 快速修正Ctrl + Alt + L 代码格式化Ctrl + Alt + O 自动导包Ctrl + Alt + I 自动缩进Ctrl + [ 快速跳到代码的开头Ctrl + ] 快速跳到代码的结尾Shift + Enter 下一行另起一行Ctrl + Shift + U 在选定的区域或代码块间切换Ctrl + Delete 删除到字符结束Ctrl + Backspace 删除到字符开始 替换/查找类Ctrl + F 当前文件查找Ctrl + R 当前文件替换Ctrl + Shift + F 全局查找Ctrl + Shift + R 全局替换Alt + F7/Ctrl + F7 文件中查询用法Ctrl + Shift + F7 文件中用法高亮显示Ctrl + Alt + F7 显示用法 运行类Shift + F10 运行类Shift + F9 调试Alt + Shift + F10 运行模式配置Alt + Shift + F9 调试模式配置 调试类F8 单步调试F7 进入内部Shift + F8 退出Ctrl + F8 在当前行加上断点/断点开关Ctrl + Shift + F8 查看所有断点 导航类Ctrl + N 快速查找类，也可查找当前工程中的文件，以文件名查找Ctrl + Tab 在窗口间进行切换Ctrl+B / Ctrl+Click 跳转到声明Ctrl + Alt + B 跳转到实现Ctrl + Shift + I 查看快速定义Ctrl + Shift + B 跳转到类型声明Ctrl + U 跳转到父方法、父类Alt + Up/Down 跳转到上一个、下一个方法Ctrl + F12 弹出文件结构Ctrl + H 类型层次结构Ctrl + Shift + H 方法层次结构Ctrl + Alt + H 调用层次结构F2 / Shift + F2 下一条、前一条高亮的错误 重构类F5 复制F6 剪切Alt + Delete 安全删除Shift + F6 方法或变量重命名Ctrl + F6 更改签名Ctrl + Alt + N 内联Ctrl + Alt + M 提取方法Ctrl + Alt + V 提取属性Ctrl + Alt + F 提取字段Ctrl + Alt + C 提取常量Ctrl + Alt + P 提取参数]]></content>
+    <content type="text"><![CDATA[pycharm之常用快捷键 编辑类 查找类 运行类 调试类 导航类 重构类 编辑类Ctrl + D —————&gt; 复制选定的区域/行Ctrl + Y —————&gt; 删除选定的行Ctrl + / —————&gt; 行注释Alt + Insert —————&gt; 自动生成代码Ctrl + O —————&gt; 重新方法Ctrl + Alt + T —————&gt; 选中Ctrl + Shift + / —————&gt; 块注释Ctrl + 鼠标 —————&gt; 进入代码的定义Ctrl + W —————&gt; 选中增加的代码块Ctrl + Shift + W —————&gt; 回到之前状态Alt + Enter —————&gt; 快速修正Ctrl + Alt + L —————&gt; 代码格式化Ctrl + Alt + O —————&gt; 自动导包Ctrl + Alt + I —————&gt; 自动缩进Ctrl + [ —————&gt; 快速跳到代码的开头Ctrl + ] —————&gt; 快速跳到代码的结尾Shift + Enter —————&gt; 下一行另起一行Ctrl + Shift + U —————&gt; 在选定的区域或代码块间切换Ctrl + Delete —————&gt; 删除到字符结束Ctrl + Backspace —————&gt; 删除到字符开始 替换/查找类Ctrl + F —————&gt; 当前文件查找Ctrl + R —————&gt; 当前文件替换Ctrl + Shift + F —————&gt; 全局查找Ctrl + Shift + R —————&gt; 全局替换Alt + F7/Ctrl + F7 —————&gt; 文件中查询用法Ctrl + Shift + F7 —————&gt; 文件中用法高亮显示Ctrl + Alt + F7 —————&gt; 显示用法 运行类Shift + F10 —————&gt; 运行类Shift + F9 —————&gt; 调试Alt + Shift + F10 —————&gt; 运行模式配置Alt + Shift + F9 —————&gt; 调试模式配置 调试类F8 —————&gt; 单步调试F7 —————&gt; 进入内部Shift + F8 —————&gt; 退出Ctrl + F8 —————&gt; 在当前行加上断点/断点开关Ctrl + Shift + F8 —————&gt; 查看所有断点 导航类Ctrl + N —————&gt; 快速查找类，也可查找当前工程中的文件，以文件名查找Ctrl + Tab —————&gt; 在窗口间进行切换Ctrl+B / Ctrl+Click —————&gt; 跳转到声明Ctrl + Alt + B —————&gt; 跳转到实现Ctrl + Shift + I —————&gt; 查看快速定义Ctrl + Shift + B —————&gt; 跳转到类型声明Ctrl + U —————&gt; 跳转到父方法、父类Alt + Up/Down —————&gt; 跳转到上一个、下一个方法Ctrl + F12 —————&gt; 弹出文件结构Ctrl + H —————&gt; 类型层次结构Ctrl + Shift + H —————&gt; 方法层次结构Ctrl + Alt + H —————&gt; 调用层次结构F2 / Shift + F2 —————&gt; 下一条、前一条高亮的错误 重构类F5 —————&gt; 复制F6 —————&gt; 剪切Alt + Delete —————&gt; 安全删除Shift + F6 —————&gt; 方法或变量重命名Ctrl + F6 —————&gt; 更改签名Ctrl + Alt + N —————&gt; 内联Ctrl + Alt + M —————&gt; 提取方法Ctrl + Alt + V —————&gt; 提取属性Ctrl + Alt + F —————&gt; 提取字段Ctrl + Alt + C —————&gt; 提取常量Ctrl + Alt + P —————&gt; 提取参数]]></content>
       <categories>
         <category>闲谈快捷键</category>
       </categories>
@@ -44,8 +44,8 @@
         <category>数据库操作语法</category>
       </categories>
       <tags>
-        <tag>语法</tag>
         <tag>数据库</tag>
+        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
@@ -144,9 +144,9 @@
         <category>简单语法汇总</category>
       </categories>
       <tags>
+        <tag>语法</tag>
         <tag>hexo</tag>
         <tag>markdown</tag>
-        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
