@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gracesoul.github.io/"/>
-  <updated>2019-05-21T08:45:36.946Z</updated>
+  <updated>2019-05-22T07:40:00.152Z</updated>
   <id>https://gracesoul.github.io/</id>
   
   <author>
@@ -17,21 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>pycharm之常用快捷键</title>
+    <link href="https://gracesoul.github.io/2019/05/22/pycharm%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://gracesoul.github.io/2019/05/22/pycharm之常用快捷键/</id>
+    <published>2019-05-22T06:57:10.000Z</published>
+    <updated>2019-05-22T07:40:00.152Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="pycharm之常用快捷键"><a href="#pycharm之常用快捷键" class="headerlink" title="pycharm之常用快捷键"></a>pycharm之常用快捷键</h4><ol><li>编辑类</li><li>查找类</li><li>运行类</li><li>调试类</li><li>导航类</li><li>重构类<a id="more"></a></li><li><p>编辑类<br>Ctrl + D           复制选定的区域/行<br>Ctrl + Y           删除选定的行<br>Ctrl + /           行注释<br>Alt + Insert          自动生成代码<br>Ctrl + O              重新方法<br>Ctrl + Alt + T      选中<br>Ctrl + Shift + /      块注释<br>Ctrl + 鼠标        进入代码的定义<br>Ctrl + W              选中增加的代码块<br>Ctrl + Shift + W      回到之前状态<br>Alt + Enter          快速修正<br>Ctrl + Alt + L     代码格式化<br>Ctrl + Alt + O     自动导包<br>Ctrl + Alt + I      自动缩进<br>Ctrl + [           快速跳到代码的开头<br>Ctrl + ]           快速跳到代码的结尾<br>Shift + Enter      下一行另起一行<br>Ctrl + Shift + U      在选定的区域或代码块间切换<br>Ctrl + Delete      删除到字符结束<br>Ctrl + Backspace      删除到字符开始</p></li><li><p>替换/查找类<br>Ctrl + F            当前文件查找<br>Ctrl + R            当前文件替换<br>Ctrl + Shift + F    全局查找<br>Ctrl + Shift + R    全局替换<br>Alt + F7/Ctrl + F7  文件中查询用法<br>Ctrl + Shift + F7   文件中用法高亮显示<br>Ctrl + Alt + F7       显示用法</p></li><li><p>运行类<br>Shift + F10      运行类<br>Shift + F9       调试<br>Alt + Shift + F10 运行模式配置<br>Alt + Shift + F9  调试模式配置</p></li><li><p>调试类<br>F8                单步调试<br>F7                进入内部<br>Shift + F8        退出<br>Ctrl + F8         在当前行加上断点/断点开关<br>Ctrl + Shift + F8 查看所有断点</p></li><li><p>导航类<br>Ctrl + N               快速查找类，也可查找当前工程中的文件，以文件名查找<br>Ctrl + Tab              在窗口间进行切换<br>Ctrl+B / Ctrl+Click      跳转到声明<br>Ctrl + Alt + B          跳转到实现<br>Ctrl + Shift + I          查看快速定义<br>Ctrl + Shift + B          跳转到类型声明<br>Ctrl + U                  跳转到父方法、父类<br>Alt + Up/Down          跳转到上一个、下一个方法<br>Ctrl + F12              弹出文件结构<br>Ctrl + H                  类型层次结构<br>Ctrl + Shift + H          方法层次结构<br>Ctrl + Alt + H          调用层次结构<br>F2 / Shift + F2          下一条、前一条高亮的错误</p></li><li><p>重构类<br>F5                  复制<br>F6                  剪切<br>Alt + Delete          安全删除<br>Shift + F6          方法或变量重命名<br>Ctrl + F6          更改签名<br>Ctrl + Alt + N      内联<br>Ctrl + Alt + M      提取方法<br>Ctrl + Alt + V      提取属性<br>Ctrl + Alt + F      提取字段<br>Ctrl + Alt + C      提取常量<br>Ctrl + Alt + P      提取参数</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;pycharm之常用快捷键&quot;&gt;&lt;a href=&quot;#pycharm之常用快捷键&quot; class=&quot;headerlink&quot; title=&quot;pycharm之常用快捷键&quot;&gt;&lt;/a&gt;pycharm之常用快捷键&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;编辑类&lt;/li&gt;
+&lt;li&gt;查找类&lt;/li&gt;
+&lt;li&gt;运行类&lt;/li&gt;
+&lt;li&gt;调试类&lt;/li&gt;
+&lt;li&gt;导航类&lt;/li&gt;
+&lt;li&gt;重构类&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="闲谈快捷键" scheme="https://gracesoul.github.io/categories/%E9%97%B2%E8%B0%88%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    
+      <category term="工具" scheme="https://gracesoul.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="快捷键" scheme="https://gracesoul.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>python之类与对象</title>
     <link href="https://gracesoul.github.io/2019/05/21/python%E4%B9%8B%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1/"/>
     <id>https://gracesoul.github.io/2019/05/21/python之类与对象/</id>
     <published>2019-05-21T07:30:50.000Z</published>
-    <updated>2019-05-21T08:45:36.946Z</updated>
+    <updated>2019-05-21T08:52:19.886Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="python面向对象编程之类与对象"><a href="#python面向对象编程之类与对象" class="headerlink" title="python面向对象编程之类与对象"></a>python面向对象编程之类与对象</h4><ol><li>类的语法：<br>class 类名:<br>   类的解释文档<br>   类方法(功能)，类属性(特征)<br>   def 方法名(self):  <pre><code>pass</code></pre></li><li>类名的规范：标识符 数字 字母 下划线组成 <strong><em>不能以数字开头</em></strong></li><li>见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写<a id="more"></a></li><li>万物皆对象（对象都是来自(属于)某一个类）–》<strong><em>类可以产生对象</em></strong></li><li>创建对象：类名() —&gt; 类名+括号()</li><li><strong><em>对象具有类的所有的属性和方法</em></strong> 。 调用：对象.属性  对象.方法</li><li>类的方法：对象方法，静态方法，类方法</li><li>在类外面：类里面的属性与方法 ：该类实例化的对象可以调用</li><li>对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身<br>只能用对象来调用 (<strong><em>类不可以调用对象方法</em></strong>)</li><li>类方法：@classmethod  def 方法名(cls)： cls表示类本身，调用该方法的时候，会将类作为参数传进来<br>类可以调用，对象也可以调用 用@classmethod来装饰</li><li>静态方法：@static   def 方法名()<br>类可以调用，对象也可以调用 用@static来装饰<br>如果有这样的一个方法，它跟类里面的属性，方法，没有任何关联的时候，用不到类里面的属性，方法，就使用静态方法 </li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<h4 id="python面向对象编程之类与对象"><a href="#python面向对象编程之类与对象" class="headerlink" title="python面向对象编程之类与对象"></a>python面向对象编程之类与对象</h4><ol><li>类的语法：<br>class 类名:<br>   类的解释文档<br>   类方法(功能)，类属性(特征)<br>   def 方法名():  pass<a id="more"></a></li><li>类名的规范：标识符 数字 字母 下划线组成 <strong><em>不能以数字开头</em></strong></li><li>见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写</li><li>万物皆对象（对象都是来自(属于)某一个类）–》<strong><em>类可以产生对象</em></strong></li><li>创建对象：类名() —&gt; 类名+括号()</li><li><strong><em>对象具有类的所有的属性和方法</em></strong> 。 调用：对象.属性  对象.方法</li><li>类的方法：对象方法，静态方法，类方法</li><li>在类外面：类里面的属性与方法 ：该类实例化的对象可以调用</li><li>对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身<br>只能用对象来调用 (<strong><em>类不可以调用对象方法</em></strong>)</li><li>类方法：@classmethod  def 方法名(cls)： cls表示类本身，调用该方法的时候，会将类作为参数传进来<br>类可以调用，对象也可以调用 用@classmethod来装饰</li><li>静态方法：@static   def 方法名()<br>类可以调用，对象也可以调用 用@static来装饰<br>如果有这样的一个方法，它跟类里面的属性，方法，没有任何关联的时候，用不到类里面的属性，方法，就使用静态方法 </li><li></li></ol>]]></content>
     
     <summary type="html">
     
       &lt;h4 id=&quot;python面向对象编程之类与对象&quot;&gt;&lt;a href=&quot;#python面向对象编程之类与对象&quot; class=&quot;headerlink&quot; title=&quot;python面向对象编程之类与对象&quot;&gt;&lt;/a&gt;python面向对象编程之类与对象&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;类的语法：&lt;br&gt;class 类名:&lt;br&gt;   类的解释文档&lt;br&gt;   类方法(功能)，类属性(特征)&lt;br&gt;   def 方法名(self):  &lt;pre&gt;&lt;code&gt;pass
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;类名的规范：标识符 数字 字母 下划线组成 &lt;strong&gt;&lt;em&gt;不能以数字开头&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;见名之意,不能使用关键字  驼峰命名： 每个单词首字母大写&lt;/li&gt;&lt;/ol&gt;
+&lt;li&gt;类的语法：&lt;br&gt;class 类名:&lt;br&gt;   类的解释文档&lt;br&gt;   类方法(功能)，类属性(特征)&lt;br&gt;   def 方法名():  pass&lt;/li&gt;&lt;/ol&gt;
     
     </summary>
     
@@ -93,9 +120,9 @@
       <category term="数据库操作语法" scheme="https://gracesoul.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
     
     
-      <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+    
+      <category term="数据库" scheme="https://gracesoul.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
@@ -311,11 +338,11 @@
       <category term="简单语法汇总" scheme="https://gracesoul.github.io/categories/%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%E6%B1%87%E6%80%BB/"/>
     
     
-      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
-    
       <category term="hexo" scheme="https://gracesoul.github.io/tags/hexo/"/>
     
       <category term="markdown" scheme="https://gracesoul.github.io/tags/markdown/"/>
+    
+      <category term="语法" scheme="https://gracesoul.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   

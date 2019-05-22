@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[pycharm之常用快捷键]]></title>
+    <url>%2F2019%2F05%2F22%2Fpycharm%E4%B9%8B%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%2F</url>
+    <content type="text"><![CDATA[pycharm之常用快捷键 编辑类 查找类 运行类 调试类 导航类 重构类 编辑类Ctrl + D 复制选定的区域/行Ctrl + Y 删除选定的行Ctrl + / 行注释Alt + Insert 自动生成代码Ctrl + O 重新方法Ctrl + Alt + T 选中Ctrl + Shift + / 块注释Ctrl + 鼠标 进入代码的定义Ctrl + W 选中增加的代码块Ctrl + Shift + W 回到之前状态Alt + Enter 快速修正Ctrl + Alt + L 代码格式化Ctrl + Alt + O 自动导包Ctrl + Alt + I 自动缩进Ctrl + [ 快速跳到代码的开头Ctrl + ] 快速跳到代码的结尾Shift + Enter 下一行另起一行Ctrl + Shift + U 在选定的区域或代码块间切换Ctrl + Delete 删除到字符结束Ctrl + Backspace 删除到字符开始 替换/查找类Ctrl + F 当前文件查找Ctrl + R 当前文件替换Ctrl + Shift + F 全局查找Ctrl + Shift + R 全局替换Alt + F7/Ctrl + F7 文件中查询用法Ctrl + Shift + F7 文件中用法高亮显示Ctrl + Alt + F7 显示用法 运行类Shift + F10 运行类Shift + F9 调试Alt + Shift + F10 运行模式配置Alt + Shift + F9 调试模式配置 调试类F8 单步调试F7 进入内部Shift + F8 退出Ctrl + F8 在当前行加上断点/断点开关Ctrl + Shift + F8 查看所有断点 导航类Ctrl + N 快速查找类，也可查找当前工程中的文件，以文件名查找Ctrl + Tab 在窗口间进行切换Ctrl+B / Ctrl+Click 跳转到声明Ctrl + Alt + B 跳转到实现Ctrl + Shift + I 查看快速定义Ctrl + Shift + B 跳转到类型声明Ctrl + U 跳转到父方法、父类Alt + Up/Down 跳转到上一个、下一个方法Ctrl + F12 弹出文件结构Ctrl + H 类型层次结构Ctrl + Shift + H 方法层次结构Ctrl + Alt + H 调用层次结构F2 / Shift + F2 下一条、前一条高亮的错误 重构类F5 复制F6 剪切Alt + Delete 安全删除Shift + F6 方法或变量重命名Ctrl + F6 更改签名Ctrl + Alt + N 内联Ctrl + Alt + M 提取方法Ctrl + Alt + V 提取属性Ctrl + Alt + F 提取字段Ctrl + Alt + C 提取常量Ctrl + Alt + P 提取参数]]></content>
+      <categories>
+        <category>闲谈快捷键</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python之类与对象]]></title>
     <url>%2F2019%2F05%2F21%2Fpython%E4%B9%8B%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%2F</url>
-    <content type="text"><![CDATA[python面向对象编程之类与对象 类的语法：class 类名: 类的解释文档 类方法(功能)，类属性(特征) def 方法名(self): pass 类名的规范：标识符 数字 字母 下划线组成 不能以数字开头 见名之意,不能使用关键字 驼峰命名： 每个单词首字母大写 万物皆对象（对象都是来自(属于)某一个类）–》类可以产生对象 创建对象：类名() —&gt; 类名+括号() 对象具有类的所有的属性和方法 。 调用：对象.属性 对象.方法 类的方法：对象方法，静态方法，类方法 在类外面：类里面的属性与方法 ：该类实例化的对象可以调用 对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身只能用对象来调用 (类不可以调用对象方法) 类方法：@classmethod def 方法名(cls)： cls表示类本身，调用该方法的时候，会将类作为参数传进来类可以调用，对象也可以调用 用@classmethod来装饰 静态方法：@static def 方法名()类可以调用，对象也可以调用 用@static来装饰如果有这样的一个方法，它跟类里面的属性，方法，没有任何关联的时候，用不到类里面的属性，方法，就使用静态方法]]></content>
+    <content type="text"><![CDATA[python面向对象编程之类与对象 类的语法：class 类名: 类的解释文档 类方法(功能)，类属性(特征) def 方法名(): pass 类名的规范：标识符 数字 字母 下划线组成 不能以数字开头 见名之意,不能使用关键字 驼峰命名： 每个单词首字母大写 万物皆对象（对象都是来自(属于)某一个类）–》类可以产生对象 创建对象：类名() —&gt; 类名+括号() 对象具有类的所有的属性和方法 。 调用：对象.属性 对象.方法 类的方法：对象方法，静态方法，类方法 在类外面：类里面的属性与方法 ：该类实例化的对象可以调用 对象方法：def 方法名(self): self–&gt; 调用这个方法的对象本身只能用对象来调用 (类不可以调用对象方法) 类方法：@classmethod def 方法名(cls)： cls表示类本身，调用该方法的时候，会将类作为参数传进来类可以调用，对象也可以调用 用@classmethod来装饰 静态方法：@static def 方法名()类可以调用，对象也可以调用 用@static来装饰如果有这样的一个方法，它跟类里面的属性，方法，没有任何关联的时候，用不到类里面的属性，方法，就使用静态方法]]></content>
       <categories>
         <category>面向对象编程</category>
       </categories>
@@ -32,8 +44,8 @@
         <category>数据库操作语法</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>语法</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -132,9 +144,9 @@
         <category>简单语法汇总</category>
       </categories>
       <tags>
-        <tag>语法</tag>
         <tag>hexo</tag>
         <tag>markdown</tag>
+        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
