@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[selenium之上传文件,日期控件操作]]></title>
     <url>%2F2019%2F06%2F04%2Fselenium%E4%B9%8B%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6-%E6%97%A5%E6%9C%9F%E6%8E%A7%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[selenium之上传文件,日期控件操作 上传文件操作 日期控件操作 详解上传文件操作(2种操作场景) input标签–&gt;可以直接输入路径，直接调用send_keys输入路径 非input标签，借助第三方工具 SendKeys第三方库(目前只支持python2.7版本) 网址：https:///pypi.python.org/pypi/SendKeys Python pywin32库，识别对话框句柄，进而操作使用pywin32库的方式：工具-&gt; pywin32,WinSpy pywin32在线安装：(3种方法) pip install pypiwin32 python -m pip install pypiwin32 pip install pywin32 WinSpy安装(是.exe文件，直接下载安装,WinSpy是元素识别) 工具下载地址：链接：https://pan.baidu.com/s/1cHdNHW 密码：56bp WinSpy工具为识别windos控件的工具，需要一层一层往里面找到要操作的文件输入框和打开按钮 前提：上传文件的window窗口已经打开 部分代码如下：1234567891011121314151617181920212223242526import win32guiimport win32condef file_upload(filePath,browser_type='chrome'): if browser_type == 'chrome': title = '打开' else: title = '' # 找元素---&gt;路径的输入文本框 # 一级元素 一级窗口 class = "#32770", title="打开" dialog = win32gui.FindWindow("#32770",title) # 二级元素 二级窗口 class='ComboBoxEx32',text=None ComboBoxEx32 = win32gui.FindWindowEx(dialog,0,'ComboBoxEx32',None) # 三级元素 三级窗口 class='ComboBox',text=None comboBox = win32gui.FindWindowEx(ComboBoxEx32,0,'ComboBox',None) # 四级元素 四级窗口 class='',text=None edit = win32gui.FindWindowEx(comboBox,0,'Edit',None) # 编辑按钮 # 打开的按钮 button = win32gui.FindWindowEx(dialog,0,'Button',"打开(&amp;O)") # 往编辑当中，输入文件路径 。 win32gui.SendMessage (edit, win32con.WM_SETTEXT, None, filePath) # 发送文件路径 win32gui.SendMessage (dialog, win32con.WM_COMMAND, 1, button) # 点击打开按钮if __name__ == '__main__': file_upload("D:\\111.png") 详解日期控件操作]]></content>
+    <content type="text"><![CDATA[selenium之上传文件,日期控件操作 上传文件操作 日期控件操作 详解上传文件操作(2种操作场景) input标签–&gt;可以直接输入路径，直接调用send_keys输入路径 非input标签，借助第三方工具 SendKeys第三方库(目前只支持python2.7版本) 网址：https:///pypi.python.org/pypi/SendKeys Python pywin32库，识别对话框句柄，进而操作使用pywin32库的方式：工具-&gt; pywin32,WinSpy pywin32在线安装：(3种方法) pip install pypiwin32 python -m pip install pypiwin32 pip install pywin32 WinSpy安装(是.exe文件，直接下载安装,WinSpy是元素识别) 工具下载地址：链接：https://pan.baidu.com/s/1cHdNHW 密码：56bp WinSpy工具为识别windos控件的工具，需要一层一层往里面找到要操作的文件输入框和打开按钮 前提：上传文件的window窗口已经打开一级窗口：祖先级别元素文件名窗口：路径输入文本(四级窗口)文件名窗口的父级元素：(三级窗口-三级元素)三级窗口的属性显示：三级窗口的父级元素：(二级窗口–二级元素)二级窗口的属性显示：二级窗口的父级元素：(一级，如图一)四级窗口：打开按钮打开按钮的父级显示： 部分代码如下：1234567891011121314151617181920212223242526import win32guiimport win32condef file_upload(filePath,browser_type='chrome'): if browser_type == 'chrome': title = '打开' else: title = '' # 找元素---&gt;路径的输入文本框 # 一级元素 一级窗口 class = "#32770", title="打开" dialog = win32gui.FindWindow("#32770",title) # 二级元素 二级窗口 class='ComboBoxEx32',text=None ComboBoxEx32 = win32gui.FindWindowEx(dialog,0,'ComboBoxEx32',None) # 三级元素 三级窗口 class='ComboBox',text=None comboBox = win32gui.FindWindowEx(ComboBoxEx32,0,'ComboBox',None) # 四级元素 四级窗口 class='',text=None edit = win32gui.FindWindowEx(comboBox,0,'Edit',None) # 编辑按钮 # 打开的按钮 button = win32gui.FindWindowEx(dialog,0,'Button',"打开(&amp;O)") # 往编辑当中，输入文件路径 。 win32gui.SendMessage (edit, win32con.WM_SETTEXT, None, filePath) # 发送文件路径 win32gui.SendMessage (dialog, win32con.WM_COMMAND, 1, button) # 点击打开按钮if __name__ == '__main__': file_upload("D:\\111.png") 详解日期控件操作日历控件的使用场景: 可以直接输入日期直接使用send_keys()方法输入日期即可 不能够直接输入日期，只能够选择基本思路：利用js去掉readonly属性，直接输入时间 使用js代码获取当前这个元素 设置readonly属性值为false 再修改这个元素的value值 代码如下：123456789101112131415161718192021222324252627282930313233343536373839404142 方法一： # 去掉只读 js_pha = "document.getElementById('train_date').readOnly=false;" driver.execute_script(js_pha) # 清空原来的内容并写入新的内容 driver.find_element_by_id('train_date').clear() driver.find_element_by_id('train_date').send_keys('2019-07-07') 方法二： # 去掉只读 js_pha = "document.getElementById('train_date').readOnly=false;" driver.execute_script(js_pha) # 直接通过js语句来修改日期 driver.execute_script("document.getElementById('train_date').value=2019-07-07") 方法三： js_pha = "var a = document.getElementById('train_date');" \ "a.readOnly = false;" \ "a.value = '2019-07-01'" driver.execute_script(js_pha) 操作12306选择日期的操作 from selenium import webdriverfrom time import sleepfrom selenium.webdriver.common.keys import Keysdriver = webdriver.Chrome()driver.maximize_window()driver.implicitly_wait(20)driver.get('https://www.12306.cn/')sleep(5)driver.find_element_by_xpath("//input[@id='fromStationText']").click()driver.find_element_by_xpath("//input[@id='fromStationText']").send_keys('武汉',Keys.ENTER)driver.find_element_by_xpath("//input[@id='toStationText']").click()driver.find_element_by_xpath("//input[@id='toStationText']").send_keys('深圳',Keys.ENTER)# 执行jsjs_pha = "var a = document.getElementById('train_date');"\ 'a.readOnly = false;'\ 'a.value = "2019-07-02";'driver.execute_script(js_pha)driver.find_element_by_xpath("//a[@id='search_one']").click()]]></content>
       <categories>
         <category>selenium-python自动化</category>
       </categories>
@@ -104,8 +104,8 @@
         <category>数据库操作语法</category>
       </categories>
       <tags>
-        <tag>语法</tag>
         <tag>数据库</tag>
+        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
@@ -204,9 +204,9 @@
         <category>简单语法汇总</category>
       </categories>
       <tags>
+        <tag>语法</tag>
         <tag>hexo</tag>
         <tag>markdown</tag>
-        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
